@@ -12,7 +12,7 @@ struct GameDetailRequest: Codable {
     let id: Int
     
     init(id: Int) {
-        self.apiKey = RequestConstant.apiKey.rawValue
+        self.apiKey = RequestConstant.apiKey
         self.id = id
     }
     

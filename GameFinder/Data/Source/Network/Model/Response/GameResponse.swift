@@ -11,7 +11,7 @@ struct GameResponse: Codable {
     let id: Int
     let slug: String
     let name: String
-    let released: String
+    let released: Date
     let tba: Bool
     let backgroundImage: String
     let rating: Int
