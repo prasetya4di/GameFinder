@@ -95,10 +95,11 @@ class GameRepositoryImpl: GameRepository {
             })
     }
     
-    private func stringToDate(_ date: String) -> Date {
+    private func stringToDate(_ date: String?) -> Date? {
+        guard let date else { return nil }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let formattedDate = dateFormatter.date(from: date)
-        return formattedDate!
+        return formattedDate
     }
 }

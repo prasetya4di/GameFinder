@@ -11,9 +11,9 @@ struct GameDetail {
     let id: Int
     let slug, name, nameOriginal, description: String
     let metacritic: Int
-    let released: Date
+    let released: Date?
     let tba: Bool
-    let updated: Date
+    let updated: Date?
     let backgroundImage: String
     let backgroundImageAdditional: String
     let website: String

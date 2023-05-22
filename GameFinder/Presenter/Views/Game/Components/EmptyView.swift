@@ -1,5 +1,5 @@
 //
-//  ErrorView.swift
+//  EmptyView.swift
 //  GameFinder
 //
 //  Created by Prasetya on 22/05/23.
@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-struct ErrorView: View {
-    let message: String
-    
+struct EmptyView: View {
     var body: some View {
         VStack(spacing: 8) {
             Spacer()
             
-            Image(systemName: "exclamationmark.triangle")
+            Image(systemName: "questionmark.circle")
             
-            Text(message)
-                .font(.caption)
+            Text("Ooppss we can't find any games for you, try to refresh this page or search for another keyword")
                 .multilineTextAlignment(.center)
+                .font(.caption)
             
             Spacer()
         }
@@ -26,10 +24,8 @@ struct ErrorView: View {
     }
 }
 
-struct ErrorView_Previews: PreviewProvider {
+struct EmptyView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView(
-        	message: "Error happen, try to refresh"
-        )
+        EmptyView()
     }
 }

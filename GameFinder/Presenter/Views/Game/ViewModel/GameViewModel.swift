@@ -121,21 +121,18 @@ class GameViewModel: ObservableObject {
                     case .error(let error):
                         state.isLoading = false
                         state.error = error
-                        print("error anying")
-                        print(error)
-                        print(error.localizedDescription)
                 }
             case .searchGamesResult(let status):
                 switch status {
                     case .loading:
                         state.page = 1
-                        state.isLoading = true
+                        state.isSearching = true
                     case .success(let games, let searchQuery):
-                        state.isLoading = false
+                        state.isSearching = false
                         state.games = games
                         state.searchQuery = searchQuery
                     case .error(let error):
-                        state.isLoading = false
+                        state.isSearching = false
                         state.error = error
                 }
             case .loadMoreResult(let status):

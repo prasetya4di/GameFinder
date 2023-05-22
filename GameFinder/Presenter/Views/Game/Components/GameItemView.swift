@@ -12,7 +12,7 @@ struct GameItemView: View {
     
     var body: some View {
         HStack(alignment: .top) {
-            CachedNetworkImage(imageURL: game.backgroundImage)
+            CachedNetworkImage(imageURL: game.backgroundImage ?? "")
                 .frame(width: 180, height: 100)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
             
@@ -20,7 +20,9 @@ struct GameItemView: View {
                 Text(game.name)
                     .bold()
                 
-                GameReleaseDate(releaseDate: game.released)
+                if let released = game.released {
+                    GameReleaseDate(releaseDate: released)
+                }
                 
                 GameRating(rating: game.rating)
             }

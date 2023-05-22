@@ -9,6 +9,7 @@ import Foundation
 
 struct GameViewState: Equatable {
     var isLoading = false
+    var isSearching = false
     var isLoadMore = false
     var games: [Game] = []
     var searchQuery: String? = nil
@@ -21,6 +22,7 @@ struct GameViewState: Equatable {
     
     static func == (lhs: GameViewState, rhs: GameViewState) -> Bool {
         return lhs.isLoading == rhs.isLoading
+        && lhs.isSearching == rhs.isSearching
         && lhs.isLoadMore == rhs.isLoadMore
         && lhs.games == rhs.games
         && lhs.searchQuery == rhs.searchQuery
