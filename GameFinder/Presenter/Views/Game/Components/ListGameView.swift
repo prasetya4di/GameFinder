@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ListGameView: View {
     let games: [Game]
+    let loadMore: () -> Void
     
     var body: some View {
         VStack {
             ForEach(games, id: \.id) { game in
                 GameItemView(game: game)
+                    .onAppear {
+                        if let lastGame = games.last, lastGame == game {
+                            loadMore()
+                        }
+                    }
             }
             Spacer()
         }
@@ -42,6 +48,6 @@ struct ListGameView_Previews: PreviewProvider {
                 game,
             	game,
             ]
-        )
+        ) {}
     }
 }
