@@ -14,9 +14,9 @@ enum ApiError: Error {
 }
 
 class ApiClient {
-    let baseURL: URL
+    let baseURL: String
     
-    init(baseURL: URL) {
+    init(baseURL: String) {
         self.baseURL = baseURL
     }
     
@@ -57,7 +57,7 @@ class ApiClient {
         
         // Parse the response data
         let decoder = JSONDecoder()
-        let response = try decoder.decode(T.self, from: data)
+        let response = try! decoder.decode(T.self, from: data)
         
         return response
     }

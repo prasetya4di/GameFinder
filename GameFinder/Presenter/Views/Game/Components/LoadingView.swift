@@ -9,7 +9,11 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        ProgressView("Loading data")
+        VStack {
+            Spacer()
+            ProgressView("Loading data")
+        	Spacer()
+        }
     }
 }
 

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct GameRating: View {
-    let rating: Int
+    let rating: Double
     
     var body: some View {
         HStack(spacing: 2) {
             Image(systemName: "star.fill")
                 .foregroundColor(.yellow)
-            Text(String(rating))
+            Text(String(format: "%.1f", rating))
                 .bold()
                 .foregroundColor(.gray)
         }
@@ -23,6 +23,6 @@ struct GameRating: View {
 
 struct GameRating_Previews: PreviewProvider {
     static var previews: some View {
-        GameRating(rating: 3)
+        GameRating(rating: 4.55)
     }
 }

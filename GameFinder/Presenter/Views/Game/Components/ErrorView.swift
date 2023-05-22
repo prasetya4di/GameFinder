@@ -12,10 +12,14 @@ struct ErrorView: View {
     
     var body: some View {
         VStack(spacing: 8) {
+            Spacer()
+            
             Image(systemName: "exclamationmark.triangle")
             
             Text(message)
                 .font(.caption)
+            
+            Spacer()
         }
         .foregroundColor(.gray)
     }

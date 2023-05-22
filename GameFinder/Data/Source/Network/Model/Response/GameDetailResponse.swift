@@ -15,11 +15,12 @@ struct GameDetailResponse: Codable {
     let metacriticPlatforms: [MetacriticPlatform]
     let released: String
     let tba: Bool
-    let updated: Date
+    let updated: String
     let backgroundImage: String
     let backgroundImageAdditional: String
     let website: String
-    let rating, ratingTop: Int
+    let rating: Double
+    let ratingTop: Int
     let ratings, reactions: AddedByStatus
     let added: Int
     let addedByStatus: AddedByStatus

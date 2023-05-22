@@ -14,7 +14,7 @@ struct Game: Equatable {
     let released: Date
     let tba: Bool
     let backgroundImage: String
-    let rating: Int
+    let rating: Double
     let ratingTop: Int
     let ratingsCount: Int
 }

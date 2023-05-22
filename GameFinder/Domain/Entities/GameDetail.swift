@@ -11,13 +11,14 @@ struct GameDetail {
     let id: Int
     let slug, name, nameOriginal, description: String
     let metacritic: Int
-    let released: String
+    let released: Date
     let tba: Bool
     let updated: Date
     let backgroundImage: String
     let backgroundImageAdditional: String
     let website: String
-    let rating, ratingTop: Int
+    let rating: Double
+    let ratingTop: Int
     let added: Int
     let playtime, screenshotsCount, moviesCount, creatorsCount: Int
     let achievementsCount: Int

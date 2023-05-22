@@ -27,7 +27,7 @@ class GameRepositoryImpl: GameRepository {
                 id: gameResponse.id,
                 slug: gameResponse.slug,
                 name: gameResponse.name,
-                released: gameResponse.released,
+                released: stringToDate(gameResponse.released),
                 tba: gameResponse.tba,
                 backgroundImage: gameResponse.backgroundImage,
                 rating: gameResponse.rating,
@@ -49,9 +49,9 @@ class GameRepositoryImpl: GameRepository {
             nameOriginal: response.nameOriginal,
             description: response.description,
             metacritic: response.metacritic,
-            released: response.released,
+            released: stringToDate(response.released),
             tba: response.tba,
-            updated: response.updated,
+            updated: stringToDate(response.updated),
             backgroundImage: response.backgroundImage,
             backgroundImageAdditional: response.backgroundImageAdditional,
             website: response.website,
@@ -93,5 +93,12 @@ class GameRepositoryImpl: GameRepository {
                     )
                 )
             })
+    }
+    
+    private func stringToDate(_ date: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let formattedDate = dateFormatter.date(from: date)
+        return formattedDate!
     }
 }

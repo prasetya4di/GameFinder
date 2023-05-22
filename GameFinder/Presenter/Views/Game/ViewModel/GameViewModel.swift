@@ -33,9 +33,10 @@ class GameViewModel: ObservableObject {
     
     private func bind() {
         viewStateSubject
-            .sink(receiveValue: { [unowned self] newState in
+            .receive(on: DispatchQueue.main)
+            .sink { [unowned self] newState in
                 self.viewState = newState
-            })
+            }
             .store(in: &cancellables)
         
         intentSubject
@@ -120,6 +121,9 @@ class GameViewModel: ObservableObject {
                     case .error(let error):
                         state.isLoading = false
                         state.error = error
+                        print("error anying")
+                        print(error)
+                        print(error.localizedDescription)
                 }
             case .searchGamesResult(let status):
                 switch status {

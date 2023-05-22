@@ -13,7 +13,7 @@ struct GameItemView: View {
     var body: some View {
         HStack(alignment: .top) {
             CachedNetworkImage(imageURL: game.backgroundImage)
-                .frame(width: 180)
+                .frame(width: 180, height: 100)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
             
             VStack(alignment: .leading, spacing: 8) {

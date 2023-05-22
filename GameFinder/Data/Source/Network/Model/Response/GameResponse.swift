@@ -11,10 +11,10 @@ struct GameResponse: Codable {
     let id: Int
     let slug: String
     let name: String
-    let released: Date
+    let released: String
     let tba: Bool
     let backgroundImage: String
-    let rating: Int
+    let rating: Double
     let ratingTop: Int
     let ratingsCount: Int
     
@@ -27,6 +27,6 @@ struct GameResponse: Codable {
         case backgroundImage = "background_image"
         case rating
         case ratingTop = "rating_top"
-        case ratingsCount = "rating_count"
+        case ratingsCount = "ratings_count"
     }
 }

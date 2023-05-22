@@ -20,11 +20,11 @@ struct CachedNetworkImage: View {
         if let image = imageLoader.image {
             Image(uiImage: image)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
         } else if let error = imageLoader.error {
             placeholderImage
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
                 .foregroundColor(.red)
                 .overlay(Text(error.localizedDescription)
                     .foregroundColor(.white)
@@ -36,8 +36,8 @@ struct CachedNetworkImage: View {
         } else {
             Rectangle()
                 .fill(.background)
-                .aspectRatio(contentMode: .fit)
-                .overlay(alignment: .top) {
+                .aspectRatio(contentMode: .fill)
+                .overlay {
                     ProgressView("Loading")
                 }
         }
