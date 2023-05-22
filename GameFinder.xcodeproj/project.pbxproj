@@ -27,6 +27,7 @@
 		44A8BE722A1B9A8600BE536D /* GameRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE712A1B9A8600BE536D /* GameRepositoryImpl.swift */; };
 		44A8BE752A1B9EFD00BE536D /* GetGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE742A1B9EFD00BE536D /* GetGames.swift */; };
 		44A8BE772A1BA09C00BE536D /* SearchGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE762A1BA09C00BE536D /* SearchGames.swift */; };
+		44A8BE792A1BA11000BE536D /* GetGameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE782A1BA11000BE536D /* GetGameDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		44A8BE712A1B9A8600BE536D /* GameRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryImpl.swift; sourceTree = "<group>"; };
 		44A8BE742A1B9EFD00BE536D /* GetGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGames.swift; sourceTree = "<group>"; };
 		44A8BE762A1BA09C00BE536D /* SearchGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGames.swift; sourceTree = "<group>"; };
+		44A8BE782A1BA11000BE536D /* GetGameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGameDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			children = (
 				44A8BE742A1B9EFD00BE536D /* GetGames.swift */,
 				44A8BE762A1BA09C00BE536D /* SearchGames.swift */,
+				44A8BE782A1BA11000BE536D /* GetGameDetail.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				44A8BE752A1B9EFD00BE536D /* GetGames.swift in Sources */,
 				44A8BE542A1B8D1000BE536D /* GameResponse.swift in Sources */,
 				44A8BE5A2A1B8FF300BE536D /* GamesRequest.swift in Sources */,
+				44A8BE792A1BA11000BE536D /* GetGameDetail.swift in Sources */,
 				44A8BE602A1B910400BE536D /* RequestConstant.swift in Sources */,
 				44A8BE472A1B66E400BE536D /* GameFinder.xcdatamodeld in Sources */,
 				44A8BE3D2A1B66E200BE536D /* ContentView.swift in Sources */,
