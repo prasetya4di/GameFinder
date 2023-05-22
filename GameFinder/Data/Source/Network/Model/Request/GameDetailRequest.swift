@@ -16,7 +16,11 @@ struct GameDetailRequest: Codable {
         self.id = id
     }
     
-    var asQueryParameter: [String: String] {
+    var queryParameters: [String: String] {
         ["key": apiKey]
+    }
+    
+    var pathParams: [String: String] {
+        ["id": String(id)]
     }
 }

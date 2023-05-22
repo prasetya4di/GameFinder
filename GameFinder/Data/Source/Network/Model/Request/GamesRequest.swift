@@ -20,7 +20,7 @@ struct GamesRequest: Codable {
         self.searchQuery = searchQuery
     }
     
-    var asQueryParameter: [String: String] {
+    var queryParameters: [String: String] {
         var queryParameters: [String:String] = [
             "key": apiKey,
             "page": String(page),

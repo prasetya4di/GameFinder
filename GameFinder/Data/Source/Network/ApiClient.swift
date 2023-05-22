@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum APIError: Error {
+enum ApiError: Error {
     case invalidURL
     case requestFailed
     // Add more error cases as needed
 }
 
-class APIClient {
+class ApiClient {
     let baseURL: URL
     
     init(baseURL: URL) {
@@ -22,8 +22,8 @@ class APIClient {
     
     func get<T: Codable>(
         withEndpoint endpoint: String,
-        pathParams: [String: String]?,
-        queryParams: [String: String]?,
+        pathParams: [String: String]? = nil,
+        queryParams: [String: String]? = nil,
         responseType: T.Type
     ) async throws -> T {
         // Create the URL with endpoint, path parameters, and query parameters
@@ -44,7 +44,7 @@ class APIClient {
         }
         
         guard let url = urlComponents.url else {
-            throw APIError.invalidURL
+            throw ApiError.invalidURL
         }
         
         // Create the URLRequest
