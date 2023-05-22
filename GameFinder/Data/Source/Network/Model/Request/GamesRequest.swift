@@ -14,9 +14,23 @@ struct GamesRequest: Codable {
     private let searchQuery: String?
     
     init(page: Int, searchQuery: String?) {
-        self.apiKey = "b78a561ac7f74d6089de948f4fc78444"
+        self.apiKey = RequestConstant.apiKey.rawValue
         self.page = page
         self.pageSize = 20
         self.searchQuery = searchQuery
+    }
+    
+    var asQueryParameter: [String: String] {
+        var queryParameters: [String:String] = [
+            "key": apiKey,
+            "page": String(page),
+            "page_size": String(pageSize),
+        ]
+        
+        if let searchQuery {
+            queryParameters["search"] = searchQuery
+        }
+        
+        return queryParameters
     }
 }
