@@ -41,6 +41,7 @@
 		44A8BE982A1BB95E00BE536D /* GameViewIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */; };
 		44A8BE9C2A1BB9C000BE536D /* GameViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */; };
 		44A8BE9E2A1BBA6500BE536D /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */; };
+		44A8BEA22A1BBAB800BE536D /* EndOfPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewIntent.swift; sourceTree = "<group>"; };
 		44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewResult.swift; sourceTree = "<group>"; };
 		44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
+		44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 				44A8BE922A1BB81E00BE536D /* LoadingView.swift */,
 				44A8BE942A1BB84F00BE536D /* ErrorView.swift */,
 				44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */,
+				44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				44A8BE602A1B910400BE536D /* RequestConstant.swift in Sources */,
 				44A8BE472A1B66E400BE536D /* GameFinder.xcdatamodeld in Sources */,
 				44A8BE812A1BA9E400BE536D /* GameView.swift in Sources */,
+				44A8BEA22A1BBAB800BE536D /* EndOfPageView.swift in Sources */,
 				44A8BE7E2A1BA1F400BE536D /* HomeView.swift in Sources */,
 				44A8BE3D2A1B66E200BE536D /* ContentView.swift in Sources */,
 				44A8BE882A1BAD7000BE536D /* GameItemView.swift in Sources */,
