@@ -34,7 +34,7 @@ struct GameDetailResponse: Codable {
     let metacriticURL: String
     let parentsCount, additionsCount, gameSeriesCount: Int
     let esrbRating: EsrbRating
-    let platforms: [Platform]
+    let platforms: [PlatformResponse]
     
     enum CodingKeys: String, CodingKey {
         case id, slug, name
@@ -91,10 +91,10 @@ struct MetacriticPlatform: Codable {
 }
 
 // MARK: - Platform
-struct Platform: Codable {
+struct PlatformResponse: Codable {
     let platform: EsrbRating
     let releasedAt: String
-    let requirements: Requirements
+    let requirements: RequirementsResponse
     
     enum CodingKeys: String, CodingKey {
         case platform
@@ -104,6 +104,6 @@ struct Platform: Codable {
 }
 
 // MARK: - Requirements
-struct Requirements: Codable {
+struct RequirementsResponse: Codable {
     let minimum, recommended: String
 }

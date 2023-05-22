@@ -22,6 +22,7 @@
 		44A8BE632A1B946100BE536D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE622A1B946100BE536D /* ApiClient.swift */; };
 		44A8BE652A1B953500BE536D /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE642A1B953500BE536D /* GameService.swift */; };
 		44A8BE692A1B98C900BE536D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE682A1B98C900BE536D /* Game.swift */; };
+		44A8BE6B2A1B98F900BE536D /* GameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE6A2A1B98F900BE536D /* GameDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		44A8BE622A1B946100BE536D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		44A8BE642A1B953500BE536D /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		44A8BE682A1B98C900BE536D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		44A8BE6A2A1B98F900BE536D /* GameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				44A8BE682A1B98C900BE536D /* Game.swift */,
+				44A8BE6A2A1B98F900BE536D /* GameDetail.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				44A8BE442A1B66E400BE536D /* Persistence.swift in Sources */,
 				44A8BE522A1B8CCC00BE536D /* GamesResponse.swift in Sources */,
 				44A8BE692A1B98C900BE536D /* Game.swift in Sources */,
+				44A8BE6B2A1B98F900BE536D /* GameDetail.swift in Sources */,
 				44A8BE652A1B953500BE536D /* GameService.swift in Sources */,
 				44A8BE5C2A1B90A500BE536D /* GameDetailRequest.swift in Sources */,
 				44A8BE542A1B8D1000BE536D /* GameResponse.swift in Sources */,
