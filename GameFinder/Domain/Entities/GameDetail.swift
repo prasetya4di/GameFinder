@@ -44,6 +44,11 @@ struct Platform {
     }
 }
 
+struct EsrbRating: Codable {
+    let id: Int
+    let slug, name: String
+}
+
 struct Requirements {
     let minimum, recommended: String
 }

@@ -22,7 +22,7 @@ class GameServiceImpl: GameService {
     
     func getGames(request: GamesRequest) async throws -> GamesResponse {
         return try await apiClient.get(
-            withEndpoint: "",
+            withEndpoint: "games",
             queryParams: request.queryParameters,
             responseType: GamesResponse.self
         )
@@ -30,7 +30,7 @@ class GameServiceImpl: GameService {
     
     func getGameDetail(request: GameDetailRequest) async throws -> GameDetailResponse {
         return try await apiClient.get(
-            withEndpoint: "",
+            withEndpoint: "games",
             pathParams: request.pathParams,
             queryParams: request.queryParameters,
             responseType: GameDetailResponse.self

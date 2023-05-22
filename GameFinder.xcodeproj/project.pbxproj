@@ -24,6 +24,7 @@
 		44A8BE692A1B98C900BE536D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE682A1B98C900BE536D /* Game.swift */; };
 		44A8BE6B2A1B98F900BE536D /* GameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE6A2A1B98F900BE536D /* GameDetail.swift */; };
 		44A8BE6E2A1B99E200BE536D /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE6D2A1B99E200BE536D /* GameRepository.swift */; };
+		44A8BE722A1B9A8600BE536D /* GameRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE712A1B9A8600BE536D /* GameRepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		44A8BE682A1B98C900BE536D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		44A8BE6A2A1B98F900BE536D /* GameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetail.swift; sourceTree = "<group>"; };
 		44A8BE6D2A1B99E200BE536D /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
+		44A8BE712A1B9A8600BE536D /* GameRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		44A8BE4D2A1B8C1900BE536D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				44A8BE702A1B9A7900BE536D /* Repository */,
 				44A8BE4E2A1B8C2100BE536D /* Source */,
 			);
 			path = Data;
@@ -174,6 +177,14 @@
 			isa = PBXGroup;
 			children = (
 				44A8BE6D2A1B99E200BE536D /* GameRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		44A8BE702A1B9A7900BE536D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				44A8BE712A1B9A8600BE536D /* GameRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -263,6 +274,7 @@
 				44A8BE6E2A1B99E200BE536D /* GameRepository.swift in Sources */,
 				44A8BE562A1B8F7F00BE536D /* GameDetailResponse.swift in Sources */,
 				44A8BE3B2A1B66E200BE536D /* GameFinderApp.swift in Sources */,
+				44A8BE722A1B9A8600BE536D /* GameRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
