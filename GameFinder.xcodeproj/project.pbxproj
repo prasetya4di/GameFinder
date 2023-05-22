@@ -36,6 +36,7 @@
 		44A8BE8D2A1BB2B600BE536D /* GameRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE8C2A1BB2B600BE536D /* GameRating.swift */; };
 		44A8BE8F2A1BB4BA00BE536D /* GameReleaseDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE8E2A1BB4BA00BE536D /* GameReleaseDate.swift */; };
 		44A8BE912A1BB5F500BE536D /* ListGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE902A1BB5F400BE536D /* ListGameView.swift */; };
+		44A8BE932A1BB81E00BE536D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE922A1BB81E00BE536D /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		44A8BE8C2A1BB2B600BE536D /* GameRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRating.swift; sourceTree = "<group>"; };
 		44A8BE8E2A1BB4BA00BE536D /* GameReleaseDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReleaseDate.swift; sourceTree = "<group>"; };
 		44A8BE902A1BB5F400BE536D /* ListGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGameView.swift; sourceTree = "<group>"; };
+		44A8BE922A1BB81E00BE536D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 				44A8BE8C2A1BB2B600BE536D /* GameRating.swift */,
 				44A8BE8E2A1BB4BA00BE536D /* GameReleaseDate.swift */,
 				44A8BE902A1BB5F400BE536D /* ListGameView.swift */,
+				44A8BE922A1BB81E00BE536D /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				44A8BE442A1B66E400BE536D /* Persistence.swift in Sources */,
 				44A8BE522A1B8CCC00BE536D /* GamesResponse.swift in Sources */,
 				44A8BE692A1B98C900BE536D /* Game.swift in Sources */,
+				44A8BE932A1BB81E00BE536D /* LoadingView.swift in Sources */,
 				44A8BE6B2A1B98F900BE536D /* GameDetail.swift in Sources */,
 				44A8BE652A1B953500BE536D /* GameService.swift in Sources */,
 				44A8BE5C2A1B90A500BE536D /* GameDetailRequest.swift in Sources */,
