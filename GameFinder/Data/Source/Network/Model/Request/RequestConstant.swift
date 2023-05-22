@@ -7,6 +7,7 @@
 
 import Foundation
 
-enum RequestConstant: String {
-    case apiKey = "b78a561ac7f74d6089de948f4fc78444"
+enum RequestConstant {
+    static let apiKey = "b78a561ac7f74d6089de948f4fc78444"
+    static let pageSize = 20
 }
