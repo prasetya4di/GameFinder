@@ -42,6 +42,7 @@
 		44A8BE9C2A1BB9C000BE536D /* GameViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */; };
 		44A8BE9E2A1BBA6500BE536D /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */; };
 		44A8BEA22A1BBAB800BE536D /* EndOfPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */; };
+		44A8BEA42A1BBC0600BE536D /* GameViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEA32A1BBC0600BE536D /* GameViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewResult.swift; sourceTree = "<group>"; };
 		44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
 		44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfPageView.swift; sourceTree = "<group>"; };
+		44A8BEA32A1BBC0600BE536D /* GameViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 			children = (
 				44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */,
 				44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */,
+				44A8BEA32A1BBC0600BE536D /* GameViewState.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				44A8BE5C2A1B90A500BE536D /* GameDetailRequest.swift in Sources */,
 				44A8BE752A1B9EFD00BE536D /* GetGames.swift in Sources */,
 				44A8BE8F2A1BB4BA00BE536D /* GameReleaseDate.swift in Sources */,
+				44A8BEA42A1BBC0600BE536D /* GameViewState.swift in Sources */,
 				44A8BE542A1B8D1000BE536D /* GameResponse.swift in Sources */,
 				44A8BE5A2A1B8FF300BE536D /* GamesRequest.swift in Sources */,
 				44A8BE792A1BA11000BE536D /* GetGameDetail.swift in Sources */,

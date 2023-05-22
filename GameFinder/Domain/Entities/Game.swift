@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Game {
+struct Game: Equatable {
     let id: Int
     let slug: String
     let name: String
