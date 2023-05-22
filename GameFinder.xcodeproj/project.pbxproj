@@ -39,6 +39,7 @@
 		44A8BE932A1BB81E00BE536D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE922A1BB81E00BE536D /* LoadingView.swift */; };
 		44A8BE952A1BB84F00BE536D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE942A1BB84F00BE536D /* ErrorView.swift */; };
 		44A8BE982A1BB95E00BE536D /* GameViewIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */; };
+		44A8BE9C2A1BB9C000BE536D /* GameViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		44A8BE922A1BB81E00BE536D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		44A8BE942A1BB84F00BE536D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewIntent.swift; sourceTree = "<group>"; };
+		44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */,
+				44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A8BE9C2A1BB9C000BE536D /* GameViewResult.swift in Sources */,
 				44A8BE8B2A1BAE3400BE536D /* CachedNetworkImage.swift in Sources */,
 				44A8BE632A1B946100BE536D /* ApiClient.swift in Sources */,
 				44A8BE442A1B66E400BE536D /* Persistence.swift in Sources */,
