@@ -19,6 +19,7 @@
 		44A8BE5A2A1B8FF300BE536D /* GamesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE592A1B8FF300BE536D /* GamesRequest.swift */; };
 		44A8BE5C2A1B90A500BE536D /* GameDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE5B2A1B90A500BE536D /* GameDetailRequest.swift */; };
 		44A8BE602A1B910400BE536D /* RequestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE5F2A1B910400BE536D /* RequestConstant.swift */; };
+		44A8BE632A1B946100BE536D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE622A1B946100BE536D /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		44A8BE592A1B8FF300BE536D /* GamesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesRequest.swift; sourceTree = "<group>"; };
 		44A8BE5B2A1B90A500BE536D /* GameDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRequest.swift; sourceTree = "<group>"; };
 		44A8BE5F2A1B910400BE536D /* RequestConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstant.swift; sourceTree = "<group>"; };
+		44A8BE622A1B946100BE536D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				44A8BE572A1B8F8900BE536D /* Model */,
+				44A8BE622A1B946100BE536D /* ApiClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A8BE632A1B946100BE536D /* ApiClient.swift in Sources */,
 				44A8BE442A1B66E400BE536D /* Persistence.swift in Sources */,
 				44A8BE522A1B8CCC00BE536D /* GamesResponse.swift in Sources */,
 				44A8BE5C2A1B90A500BE536D /* GameDetailRequest.swift in Sources */,
