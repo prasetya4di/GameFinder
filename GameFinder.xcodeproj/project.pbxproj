@@ -40,6 +40,7 @@
 		44A8BE952A1BB84F00BE536D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE942A1BB84F00BE536D /* ErrorView.swift */; };
 		44A8BE982A1BB95E00BE536D /* GameViewIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */; };
 		44A8BE9C2A1BB9C000BE536D /* GameViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */; };
+		44A8BE9E2A1BBA6500BE536D /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		44A8BE942A1BB84F00BE536D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		44A8BE972A1BB95E00BE536D /* GameViewIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewIntent.swift; sourceTree = "<group>"; };
 		44A8BE9B2A1BB9C000BE536D /* GameViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewResult.swift; sourceTree = "<group>"; };
+		44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 				44A8BE902A1BB5F400BE536D /* ListGameView.swift */,
 				44A8BE922A1BB81E00BE536D /* LoadingView.swift */,
 				44A8BE942A1BB84F00BE536D /* ErrorView.swift */,
+				44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				44A8BE852A1BAA3200BE536D /* FavoriteView.swift in Sources */,
 				44A8BE6E2A1B99E200BE536D /* GameRepository.swift in Sources */,
 				44A8BE562A1B8F7F00BE536D /* GameDetailResponse.swift in Sources */,
+				44A8BE9E2A1BBA6500BE536D /* LoadMoreView.swift in Sources */,
 				44A8BE772A1BA09C00BE536D /* SearchGames.swift in Sources */,
 				44A8BE3B2A1B66E200BE536D /* GameFinderApp.swift in Sources */,
 				44A8BE722A1B9A8600BE536D /* GameRepositoryImpl.swift in Sources */,
