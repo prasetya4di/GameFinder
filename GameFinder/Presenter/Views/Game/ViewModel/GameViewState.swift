@@ -12,6 +12,7 @@ struct GameViewState: Equatable {
     var isLoadMore = false
     var games: [Game] = []
     var searchQuery: String? = nil
+    var page: Int = 1
     var error: Error? = nil
     
     static func idle() -> GameViewState {

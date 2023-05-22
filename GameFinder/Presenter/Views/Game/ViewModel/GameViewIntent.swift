@@ -10,5 +10,5 @@ import Foundation
 enum GameViewIntent {
     case getGames
     case searchGames(_ searchQuery: String)
-    case loadMore
+    case loadMore(_ nextPage: Int, _ searchQuery: String?)
 }

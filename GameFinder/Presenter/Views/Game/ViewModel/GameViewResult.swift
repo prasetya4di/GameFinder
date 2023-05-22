@@ -8,9 +8,9 @@
 import Foundation
 
 enum GameViewResult {
-    case getGames(_ status: GetGamesStatus)
-    case searchGames(_ status: SearchGamesStatus)
-    case loadMore(_ status: LoadMoreStatus)
+    case getGamesResult(_ status: GetGamesStatus)
+    case searchGamesResult(_ status: SearchGamesStatus)
+    case loadMoreResult(_ status: LoadMoreStatus)
     
     enum GetGamesStatus {
         case loading
@@ -20,13 +20,13 @@ enum GameViewResult {
     
     enum SearchGamesStatus {
         case loading
-        case success(_ games: [Game], searchQuery: String)
+        case success(_ games: [Game], _ searchQuery: String)
         case error(_ err: Error)
     }
     
     enum LoadMoreStatus {
         case loading
-        case success(_ games: [Game])
+        case success(_ games: [Game], _ nextPage: Int)
         case error(_ err: Error)
     }
 }
