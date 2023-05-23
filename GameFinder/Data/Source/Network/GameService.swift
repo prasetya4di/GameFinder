@@ -9,8 +9,6 @@ import Foundation
 
 protocol GameService {
     func getGames(request: GamesRequest) async throws -> GamesResponse
-    
-    func getGameDetail(request: GameDetailRequest) async throws -> GameDetailResponse
 }
 
 class GameServiceImpl: GameService {
@@ -25,15 +23,6 @@ class GameServiceImpl: GameService {
             withEndpoint: "/games",
             queryParams: request.queryParameters,
             responseType: GamesResponse.self
-        )
-    }
-    
-    func getGameDetail(request: GameDetailRequest) async throws -> GameDetailResponse {
-        return try await apiClient.get(
-            withEndpoint: "/games",
-            pathParams: request.pathParams,
-            queryParams: request.queryParameters,
-            responseType: GameDetailResponse.self
         )
     }
 }
