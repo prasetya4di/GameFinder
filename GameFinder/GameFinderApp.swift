@@ -17,7 +17,11 @@ struct GameFinderApp: App {
         let apiClient = ApiClient(baseURL: "https://api.rawg.io/api")
         let gameService: GameService = GameServiceImpl(apiClient)
         
-        let gameRepository: GameRepository = GameRepositoryImpl(gameService)
+        let persistence = PersistenceController.shared
+        let gameDao: GameDao = GameDaoImpl(persistence)
+        
+        let gameRepository: GameRepository =
+        	GameRepositoryImpl(gameService, gameDao)
         
         let getGames: GetGames = GetGamesImpl(gameRepository)
         let searchGames: SearchGames = SearchGamesImpl(gameRepository)

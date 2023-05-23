@@ -9,9 +9,11 @@ import Foundation
 
 class GameRepositoryImpl: GameRepository {
     private let gameService: GameService
+    private let gameDao: GameDao
     
-    init(_ gameService: GameService) {
+    init(_ gameService: GameService, _ gameDao: GameDao) {
         self.gameService = gameService
+        self.gameDao = gameDao
     }
     
     func getGames(page: Int, search: String?) async throws -> [Game] {
@@ -92,7 +94,28 @@ class GameRepositoryImpl: GameRepository {
                         recommended: $0.requirements.recommended
                     )
                 )
-            })
+            }
+        )
+    }
+    
+    func getFavoriteGames() throws -> [Game] {
+        
+        return try gameDao
+            .getFavoriteGame()
+            .map { $0.toGame() }
+    }
+    
+    func addFavoriteGame(_ game: Game) {
+        let gameTable = GameTable.from(game: game)
+        gameDao.addFavoriteGame(gameTable)
+    }
+    
+    func removeFavorite(_ id: Int) throws {
+        try gameDao.removeFavorite(id)
+    }
+    
+    func isFavorite(_ id: Int) throws -> Bool {
+        return try gameDao.isFavorite(id)
     }
     
     private func stringToDate(_ date: String?) -> Date? {
