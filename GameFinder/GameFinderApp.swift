@@ -26,9 +26,17 @@ struct GameFinderApp: App {
         let getGames: GetGames = GetGamesImpl(gameRepository)
         let searchGames: SearchGames = SearchGamesImpl(gameRepository)
         let getGameDetail: GetGameDetail = GetGameDetailImpl(gameRepository)
+        let addFavoriteGame: AddFavoriteGame = AddFavoriteGameImpl(gameRepository)
+        let removeFavoriteGame: RemoveFavoriteGame = RemoveFavoriteGameImpl(gameRepository)
+        let checkFavorite: CheckFavorite = CheckFavoriteImpl(gameRepository)
         
         let gameViewModel = GameViewModel(getGames, searchGames)
-        let gameDetailViewModel = GameDetailViewModel(getGameDetail)
+        let gameDetailViewModel = GameDetailViewModel(
+            getGameDetail,
+            addFavoriteGame,
+            removeFavoriteGame,
+            checkFavorite
+        )
         
         self._gameViewModel = StateObject(wrappedValue: gameViewModel)
         self._gameDetailViewModel = StateObject(wrappedValue: gameDetailViewModel)

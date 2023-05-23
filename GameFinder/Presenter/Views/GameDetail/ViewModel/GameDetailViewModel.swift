@@ -18,9 +18,20 @@ class GameDetailViewModel: ObservableObject {
     private let intentSubject = PassthroughSubject<GameDetailIntent, Never>()
     
     private let getDetail: GetGameDetail
+    private let addFavorite: AddFavoriteGame
+    private let removeFavorite: RemoveFavoriteGame
+    private let checkFavorite: CheckFavorite
     
-    init(_ getDetail: GetGameDetail) {
+    init(
+        _ getDetail: GetGameDetail,
+        _ addFavorite: AddFavoriteGame,
+        _ removeFavorite: RemoveFavoriteGame,
+        _ checkFavorite: CheckFavorite
+    ) {
         self.getDetail = getDetail
+        self.addFavorite = addFavorite
+        self.removeFavorite = removeFavorite
+        self.checkFavorite = checkFavorite
         
         bind()
     }
