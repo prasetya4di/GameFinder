@@ -298,12 +298,9 @@
 				44A8BE8C2A1BB2B600BE536D /* GameRating.swift */,
 				44A8BE8E2A1BB4BA00BE536D /* GameReleaseDate.swift */,
 				44A8BE902A1BB5F400BE536D /* ListGameView.swift */,
-				44A8BE922A1BB81E00BE536D /* LoadingView.swift */,
-				44A8BE942A1BB84F00BE536D /* ErrorView.swift */,
 				44A8BE9D2A1BBA6500BE536D /* LoadMoreView.swift */,
 				44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */,
 				44A8BEAA2A1BCCB800BE536D /* SearchTextField.swift */,
-				44A8BEAC2A1BCFA000BE536D /* EmptyView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -311,6 +308,9 @@
 		44A8BE892A1BAE2700BE536D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				44A8BE922A1BB81E00BE536D /* LoadingView.swift */,
+				44A8BE942A1BB84F00BE536D /* ErrorView.swift */,
+				44A8BEAC2A1BCFA000BE536D /* EmptyView.swift */,
 				44A8BE8A2A1BAE3400BE536D /* CachedNetworkImage.swift */,
 			);
 			path = Components;
