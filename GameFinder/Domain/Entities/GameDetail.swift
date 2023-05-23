@@ -25,19 +25,18 @@ struct GameDetail {
     let parentAchievementsCount: Int
     let redditURL, redditName, redditDescription: String
     let redditLogo: String
-    let redditCount: Int
-    let twitchCount, youtubeCount, reviewsTextCount: String
-    let ratingsCount, suggestionsCount: Int
+    let redditCount: Int?
+    let twitchCount, youtubeCount, reviewsTextCount, ratingsCount, suggestionsCount: Int?
     let alternativeNames: [String]
     let metacriticURL: String
-    let parentsCount, additionsCount, gameSeriesCount: Int
+    let parentsCount, additionsCount, gameSeriesCount: Int?
     let platforms: [Platform]
 }
 
 struct Platform {
     let platform: EsrbRating
     let releasedAt: String
-    let requirements: Requirements
+    let requirements: Requirements?
     
     enum CodingKeys: String, CodingKey {
         case platform
@@ -52,5 +51,5 @@ struct EsrbRating: Codable {
 }
 
 struct Requirements {
-    let minimum, recommended: String
+    let minimum, recommended: String?
 }

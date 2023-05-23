@@ -26,6 +26,7 @@ struct ListGameView: View {
                             }
                         }
                 }
+                .buttonStyle(.plain)
 
             }
             Spacer()

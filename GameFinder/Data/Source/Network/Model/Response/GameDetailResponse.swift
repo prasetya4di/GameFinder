@@ -29,19 +29,19 @@ struct GameDetailResponse: Codable {
     let parentAchievementsCount: Int
     let redditURL, redditName, redditDescription: String
     let redditLogo: String
-    let redditCount: Int
-    let twitchCount, youtubeCount, reviewsTextCount: String
-    let ratingsCount, suggestionsCount: Int
+    let redditCount: Int?
+    let twitchCount, youtubeCount, reviewsTextCount, ratingsCount, suggestionsCount: Int?
     let alternativeNames: [String]
     let metacriticURL: String
-    let parentsCount, additionsCount, gameSeriesCount: Int
+    let parentsCount, additionsCount, gameSeriesCount: Int?
     let esrbRating: EsrbRatingResponse
     let platforms: [PlatformResponse]
     
     enum CodingKeys: String, CodingKey {
         case id, slug, name
         case nameOriginal = "name_original"
-        case description, metacritic
+        case description = "description_raw"
+    	case metacritic
         case metacriticPlatforms = "metacritic_platforms"
         case released, tba, updated
         case backgroundImage = "background_image"
@@ -107,5 +107,5 @@ struct PlatformResponse: Codable {
 
 // MARK: - Requirements
 struct RequirementsResponse: Codable {
-    let minimum, recommended: String
+    let minimum, recommended: String?
 }

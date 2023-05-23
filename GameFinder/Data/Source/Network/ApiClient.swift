@@ -30,9 +30,7 @@ class ApiClient {
         var urlComponents = URLComponents(string: "\(baseURL)\(endpoint)")!
         
         if let pathParams {
-            let path = pathParams.map { key, value in
-                "\(key)/\(value)"
-            }.joined(separator: "/")
+            let path = pathParams.values.joined(separator: "/")
             
             urlComponents.path = "\(urlComponents.path)/\(path)"
         }

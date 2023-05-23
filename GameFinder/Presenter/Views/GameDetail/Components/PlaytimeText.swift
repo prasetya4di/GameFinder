@@ -13,32 +13,9 @@ struct PlaytimeText: View {
     var body: some View {
         HStack(spacing: 4) {
             Image(systemName: "gamecontroller")
-            Text(convertToHoursMinutes(playtime))
+            Text("\(playtime) Hours")
                 .foregroundColor(.gray)
         }
-    }
-    
-    func convertToHoursMinutes(_ totalMinutes: Int) -> String {
-        let hours = totalMinutes / 60
-        let minutes = totalMinutes % 60
-        
-        let hourString = hours > 0 ? "\(hours) hour" + (hours > 1 ? "s" : "") : ""
-        let minuteString = minutes > 0 ? "\(minutes) minute" + (minutes > 1 ? "s" : "") : ""
-        
-        var result = ""
-        
-        if !hourString.isEmpty {
-            result += hourString
-        }
-        
-        if !minuteString.isEmpty {
-            if !result.isEmpty {
-                result += " "
-            }
-            result += minuteString
-        }
-        
-        return result.isEmpty ? "0 minutes" : result
     }
 }
 
