@@ -14,12 +14,17 @@ struct ListGameView: View {
     var body: some View {
         VStack {
             ForEach(games, id: \.id) { game in
-                GameItemView(game: game)
-                    .onAppear {
-                        if let lastGame = games.last, lastGame == game {
-                            loadMore()
+                NavigationLink {
+                    GameDetailView()
+                } label: {
+                    GameItemView(game: game)
+                        .onAppear {
+                            if let lastGame = games.last, lastGame == game {
+                                loadMore()
+                            }
                         }
-                    }
+                }
+
             }
             Spacer()
         }
