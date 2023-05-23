@@ -48,7 +48,9 @@ struct GameView: View {
         }
         .padding()
         .onAppear {
-            viewModel.dispatch(.getGames)
+            if viewModel.viewState.games.isEmpty {
+                viewModel.dispatch(.getGames)
+            }
         }
     }
 }
