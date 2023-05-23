@@ -50,6 +50,7 @@
 		44A8BEB02A1C5C1900BE536D /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEAF2A1C5C1900BE536D /* GameDetailView.swift */; };
 		44A8BEB32A1C5C6300BE536D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB22A1C5C6300BE536D /* FavoriteButton.swift */; };
 		44A8BEB62A1C5DD100BE536D /* GameDetailIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */; };
+		44A8BEB82A1C5E1300BE536D /* GameDetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB72A1C5E1300BE536D /* GameDetailResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		44A8BEAF2A1C5C1900BE536D /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		44A8BEB22A1C5C6300BE536D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailIntent.swift; sourceTree = "<group>"; };
+		44A8BEB72A1C5E1300BE536D /* GameDetailResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */,
+				44A8BEB72A1C5E1300BE536D /* GameDetailResult.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				44A8BEA42A1BBC0600BE536D /* GameViewState.swift in Sources */,
 				44A8BE542A1B8D1000BE536D /* GameResponse.swift in Sources */,
 				44A8BE5A2A1B8FF300BE536D /* GamesRequest.swift in Sources */,
+				44A8BEB82A1C5E1300BE536D /* GameDetailResult.swift in Sources */,
 				44A8BE792A1BA11000BE536D /* GetGameDetail.swift in Sources */,
 				44A8BEAB2A1BCCB800BE536D /* SearchTextField.swift in Sources */,
 				44A8BE8D2A1BB2B600BE536D /* GameRating.swift in Sources */,
