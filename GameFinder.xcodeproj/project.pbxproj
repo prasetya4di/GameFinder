@@ -52,6 +52,7 @@
 		44A8BEB62A1C5DD100BE536D /* GameDetailIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */; };
 		44A8BEB82A1C5E1300BE536D /* GameDetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB72A1C5E1300BE536D /* GameDetailResult.swift */; };
 		44A8BEBA2A1C5EAA00BE536D /* GameDetailViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB92A1C5EAA00BE536D /* GameDetailViewState.swift */; };
+		44A8BEBC2A1C5F1B00BE536D /* GameDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEBB2A1C5F1B00BE536D /* GameDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailIntent.swift; sourceTree = "<group>"; };
 		44A8BEB72A1C5E1300BE536D /* GameDetailResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailResult.swift; sourceTree = "<group>"; };
 		44A8BEB92A1C5EAA00BE536D /* GameDetailViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewState.swift; sourceTree = "<group>"; };
+		44A8BEBB2A1C5F1B00BE536D /* GameDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +372,7 @@
 				44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */,
 				44A8BEB72A1C5E1300BE536D /* GameDetailResult.swift */,
 				44A8BEB92A1C5EAA00BE536D /* GameDetailViewState.swift */,
+				44A8BEBB2A1C5F1B00BE536D /* GameDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A8BE9C2A1BB9C000BE536D /* GameViewResult.swift in Sources */,
+				44A8BEBC2A1C5F1B00BE536D /* GameDetailViewModel.swift in Sources */,
 				44A8BE8B2A1BAE3400BE536D /* CachedNetworkImage.swift in Sources */,
 				44A8BE632A1B946100BE536D /* ApiClient.swift in Sources */,
 				44A8BEB32A1C5C6300BE536D /* FavoriteButton.swift in Sources */,
