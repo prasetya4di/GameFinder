@@ -11,7 +11,7 @@ protocol GetFavoriteGames {
     func call() throws -> [Game]
 }
 
-class GetGavoriteGamesImpl: GetFavoriteGames {
+class GetFavoriteGamesImpl: GetFavoriteGames {
     private let repository: GameRepository
     
     init(_ repository: GameRepository) {

@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct GameFinderApp: App {
-    let persistenceController = PersistenceController.shared
     @StateObject private var gameViewModel: GameViewModel
     @StateObject private var gameDetailViewModel: GameDetailViewModel
+    @StateObject private var favoriteViewModel: FavoriteViewModel
     
     init() {
         let apiClient = ApiClient(baseURL: "https://api.rawg.io/api")
@@ -29,6 +29,7 @@ struct GameFinderApp: App {
         let addFavoriteGame: AddFavoriteGame = AddFavoriteGameImpl(gameRepository)
         let removeFavoriteGame: RemoveFavoriteGame = RemoveFavoriteGameImpl(gameRepository)
         let checkFavorite: CheckFavorite = CheckFavoriteImpl(gameRepository)
+        let getFavoriteGames: GetFavoriteGames = GetFavoriteGamesImpl(gameRepository)
         
         let gameViewModel = GameViewModel(getGames, searchGames)
         let gameDetailViewModel = GameDetailViewModel(
@@ -37,17 +38,19 @@ struct GameFinderApp: App {
             removeFavoriteGame,
             checkFavorite
         )
+        let favoriteViewModel = FavoriteViewModel(getFavoriteGames)
         
         self._gameViewModel = StateObject(wrappedValue: gameViewModel)
         self._gameDetailViewModel = StateObject(wrappedValue: gameDetailViewModel)
+        self._favoriteViewModel = StateObject(wrappedValue: favoriteViewModel)
     }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(gameViewModel)
                 .environmentObject(gameDetailViewModel)
+                .environmentObject(favoriteViewModel)
         }
     }
 }
