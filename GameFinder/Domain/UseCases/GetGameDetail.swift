@@ -12,13 +12,19 @@ protocol GetGameDetail {
 }
 
 class GetGameDetailImpl: GetGameDetail {
-    private let repository: GameRepository
+    private let repository: GameDetailRepository
     
-    init(_ repository: GameRepository) {
+    init(_ repository: GameDetailRepository) {
         self.repository = repository
     }
     
     func call(_ id: Int) async throws -> GameDetail {
-        return try await repository.getGameDetail(id: id)
+        guard let result = try repository.getDetail(id) else {
+            let response = try await repository.fetchDetail(id)
+            repository.addDetail(response)
+            return response
+        }
+        
+        return result
     }
 }

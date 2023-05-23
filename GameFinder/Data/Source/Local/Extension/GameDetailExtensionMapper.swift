@@ -62,7 +62,7 @@ extension GameDetailTable {
             slug: self.slug ?? "",
             name: self.name ?? "",
             nameOriginal: self.nameOriginal ?? "",
-            description: self.description,
+            description: self.detailDescription ?? "",
             metacritic: Int(self.metacritic),
             released: self.released,
             tba: self.tba,
