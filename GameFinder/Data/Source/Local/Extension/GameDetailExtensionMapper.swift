@@ -46,14 +46,55 @@ extension GameDetailTable {
         gameDetailTable.setValue(detail.reviewsTextCount, forKey: "reviewsTextCount")
         gameDetailTable.setValue(detail.ratingsCount, forKey: "ratingsCount")
         gameDetailTable.setValue(detail.suggestionsCount, forKey: "suggestionsCount")
-        gameDetailTable.setValue(detail.alternativeNames, forKey: "alternativeNames")
+        gameDetailTable.setValue("", forKey: "alternativeNames")
         gameDetailTable.setValue(detail.metacriticURL, forKey: "metacriticUrl")
         gameDetailTable.setValue(detail.parentsCount, forKey: "parentsCount")
         gameDetailTable.setValue(detail.additionsCount, forKey: "additionsCount")
         gameDetailTable.setValue(detail.gameSeriesCount, forKey: "gameSeriesCount")
-        gameDetailTable.setValue(detail.platforms, forKey: "platforms")
-
+        gameDetailTable.setValue("", forKey: "platforms")
         
         return gameDetailTable
+    }
+    
+    func toGameDetail() -> GameDetail {
+        return GameDetail(
+            id: Int(self.id),
+            slug: self.slug ?? "",
+            name: self.name ?? "",
+            nameOriginal: self.nameOriginal ?? "",
+            description: self.description,
+            metacritic: Int(self.metacritic),
+            released: self.released,
+            tba: self.tba,
+            updated: self.updatedAt,
+            backgroundImage: self.backgroundImage ?? "",
+            backgroundImageAdditional:
+                self.backgroundImageAdditional ?? "",
+            website: self.website ?? "",
+            rating: self.rating,
+            ratingTop: Int(self.ratingTop),
+            added: Int(self.added),
+            playtime: Int(self.playtime),
+            screenshotsCount: Int(self.screenshotsCount),
+            moviesCount: Int(self.moviesCount),
+            creatorsCount: Int(self.creatorsCount),
+            achievementsCount: Int(self.achievementsCount),
+            parentAchievementsCount: Int(self.parentAchievementsCount),
+            redditURL: self.redditUrl ?? "",
+            redditName: self.redditName ?? "",
+            redditDescription: self.redditDescription ?? "",
+            redditLogo: self.redditLogo ?? "",
+            redditCount: Int(self.redditCount),
+            twitchCount: Int(self.twitchCount),
+            youtubeCount: Int(self.youtubeCount),
+            reviewsTextCount: Int(self.reviewsTextCount),
+            ratingsCount: Int(self.ratingsCount),
+            suggestionsCount: Int(self.suggestionsCount),
+            alternativeNames: [],
+            metacriticURL: self.metacriticUrl ?? "",
+            parentsCount: Int(self.parentsCount),
+            additionsCount: Int(self.additionsCount),
+            gameSeriesCount: Int(self.gameSeriesCount),
+            platforms: [])
     }
 }
