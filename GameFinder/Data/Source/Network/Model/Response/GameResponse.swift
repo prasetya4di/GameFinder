@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GameResponse: Codable {
+struct GameResponse: Codable, Equatable {
     let id: Int
     let slug: String
     let name: String

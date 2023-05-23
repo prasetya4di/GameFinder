@@ -14,7 +14,10 @@ struct GameFinderApp: App {
     @StateObject private var favoriteViewModel: FavoriteViewModel
     
     init() {
-        let apiClient = ApiClient(baseURL: "https://api.rawg.io/api")
+        let apiClient = ApiClient(
+            baseURL: "https://api.rawg.io/api",
+            urlSession: URLSession.shared
+        )
         let gameService: GameService = GameServiceImpl(apiClient)
         let gameDetailService: GameDetailService = GameDetailServiceImpl(apiClient)
         

@@ -15,9 +15,11 @@ enum ApiError: Error {
 
 class ApiClient {
     let baseURL: String
+    let urlSession: URLSession
     
-    init(baseURL: String) {
+    init(baseURL: String, urlSession: URLSession) {
         self.baseURL = baseURL
+        self.urlSession = urlSession
     }
     
     func get<T: Codable>(
@@ -51,7 +53,7 @@ class ApiClient {
         // Set other request headers if needed
         
         // Send the request and get the response data
-        let (data, _) = try await URLSession.shared.data(for: request)
+        let (data, _) = try await urlSession.data(for: request)
         
         // Parse the response data
         let decoder = JSONDecoder()
