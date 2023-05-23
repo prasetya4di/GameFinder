@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct FavoriteView: View {
+    @EnvironmentObject var viewModel: FavoriteViewModel
+    
     var body: some View {
-        Text("Hello, From Favorite!")
-    }
-}
-
-struct FavoriteView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoriteView()
+        VStack {
+            if viewModel.viewState.isLoading {
+                LoadingView()
+            } else if let error = viewModel.viewState.error {
+                ErrorView(message: error.localizedDescription)
+            } else {
+                ScrollView(showsIndicators: false) {
+                    ListGameView(games: viewModel.viewState.games) { }
+                }
+            }
+        }
+        .padding()
+        .onAppear {
+            if viewModel.viewState.games.isEmpty {
+                viewModel.dispatch(.getFavoriteGames)
+            }
+        }
     }
 }
