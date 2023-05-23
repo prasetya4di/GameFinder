@@ -1,5 +1,5 @@
 //
-//  GameServiceTest.swift
+//  GameDetailServiceTest.swift
 //  GameFinderTests
 //
 //  Created by Prasetya on 23/05/23.
@@ -8,10 +8,10 @@
 import XCTest
 @testable import GameFinder
 
-final class GameServiceTests: XCTestCase {
-    
-    var mockApiClient: MockApiClient<GamesResponse>!
-    var gameService: GameService!
+final class GameDetailServiceTest: XCTestCase {
+
+    var mockApiClient: MockApiClient<GameDetailResponse>!
+    var gameDetailService: GameDetailService!
     
     override func setUpWithError() throws {
         mockApiClient = MockApiClient(
@@ -19,24 +19,21 @@ final class GameServiceTests: XCTestCase {
             urlSession: URLSession.shared
         )
         
-        gameService = GameServiceImpl(mockApiClient)
+        gameDetailService = GameDetailServiceImpl(mockApiClient)
         
         try super.setUpWithError()
     }
- 
-    func testGetGamesSuccess() async throws {
+
+    func testGetGameDetailSuccess() async throws {
         mockApiClient.shouldSucceed = true
-        mockApiClient.expectedResponse = createGamesResponse()
+        mockApiClient.expectedResponse = createGameDetailResponse()
         
         // Create a mock request
-        let request = GamesRequest(
-            page: randomInt,
-            searchQuery: randomString(length: 5)
-        )
+        let request = GameDetailRequest(id: randomInt)
         
-        // Call the getGames method
+        // Call the getGameDetail method
         do {
-            let response = try await gameService.getGames(request: request)
+            let response = try await gameDetailService.getGameDetail(request: request)
             
             // Assert the response or perform other validation
             XCTAssertNotNil(response)
@@ -46,18 +43,15 @@ final class GameServiceTests: XCTestCase {
         }
     }
     
-    func testGetGamesFailure() async throws {
+    func testGetGameDetailFailure() async throws {
         mockApiClient.shouldSucceed = false
         
         // Create a mock request
-        let request = GamesRequest(
-            page: randomInt,
-            searchQuery: randomString(length: 5)
-        )
+        let request = GameDetailRequest(id: randomInt)
         
-        // Call the getGames method
+        // Call the getGameDetail method
         do {
-            let _ = try await gameService.getGames(request: request)
+            let _ = try await gameDetailService.getGameDetail(request: request)
             
             // The test should fail if it reaches this point
             XCTFail("Expected error but got success response")
@@ -66,5 +60,4 @@ final class GameServiceTests: XCTestCase {
             XCTAssertEqual(error as? ApiError, ApiError.requestFailed)
         }
     }
-    
 }

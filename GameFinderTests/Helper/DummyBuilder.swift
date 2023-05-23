@@ -40,6 +40,56 @@ func createGamesResponse() -> GamesResponse {
     )
 }
 
+func createGameDetailResponse() -> GameDetailResponse {
+    return GameDetailResponse(
+        id: randomInt,
+        slug: randomString(length: 5),
+        name: randomString(length: 5),
+        nameOriginal: randomString(length: 5),
+        description: randomString(length: 5),
+        metacritic: randomInt,
+        metacriticPlatforms: [],
+        released: randomString(length: 5),
+        tba: randomBool,
+        updated: randomString(length: 5),
+        backgroundImage: randomString(length: 5),
+        backgroundImageAdditional: randomString(length: 5),
+        website: randomString(length: 5),
+        rating: randomDouble(from: 0, to: 5),
+        ratingTop: 5,
+        ratings: AddedByStatus(),
+        reactions: AddedByStatus(),
+        added: randomInt,
+        addedByStatus: AddedByStatus(),
+        playtime: randomInt,
+        screenshotsCount: randomInt,
+        moviesCount: randomInt,
+        creatorsCount: randomInt,
+        achievementsCount: randomInt,
+        parentAchievementsCount: randomInt,
+        redditURL: randomString(length: 5),
+        redditName: randomString(length: 5),
+        redditDescription: randomString(length: 5),
+        redditLogo: randomString(length: 5),
+        redditCount: randomInt,
+        twitchCount: randomInt,
+        youtubeCount: randomInt,
+        reviewsTextCount: randomInt,
+        ratingsCount: randomInt,
+        suggestionsCount: randomInt,
+        alternativeNames: [],
+        metacriticURL: randomString(length: 5),
+        parentsCount: randomInt,
+        additionsCount: randomInt,
+        gameSeriesCount: randomInt,
+        esrbRating: EsrbRatingResponse(
+            id: randomInt,
+            slug: randomString(length: 5),
+            name: randomString(length: 5)
+        ),
+        platforms: [])
+}
+
 var randomInt: Int {
     Int(arc4random_uniform(UInt32(100)))
 }

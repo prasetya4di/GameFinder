@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - GameDetailResponse
-struct GameDetailResponse: Codable {
+struct GameDetailResponse: Codable, Equatable {
     let id: Int
     let slug, name, nameOriginal, description: String
     let metacritic: Int
@@ -36,6 +36,45 @@ struct GameDetailResponse: Codable {
     let parentsCount, additionsCount, gameSeriesCount: Int?
     let esrbRating: EsrbRatingResponse
     let platforms: [PlatformResponse]
+    
+    static func == (lhs: GameDetailResponse, rhs: GameDetailResponse) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.slug == rhs.slug &&
+        lhs.name == rhs.name &&
+        lhs.nameOriginal == rhs.nameOriginal &&
+        lhs.description == rhs.description &&
+        lhs.metacritic == rhs.metacritic &&
+        lhs.released == rhs.released &&
+        lhs.tba == rhs.tba &&
+        lhs.updated == rhs.updated &&
+        lhs.backgroundImage == rhs.backgroundImage &&
+        lhs.backgroundImageAdditional == rhs.backgroundImageAdditional &&
+        lhs.website == rhs.website &&
+        lhs.rating == rhs.rating &&
+        lhs.ratingTop == rhs.ratingTop &&
+        lhs.added == rhs.added &&
+        lhs.playtime == rhs.playtime &&
+        lhs.screenshotsCount == rhs.screenshotsCount &&
+        lhs.moviesCount == rhs.moviesCount &&
+        lhs.creatorsCount == rhs.creatorsCount &&
+        lhs.achievementsCount == rhs.achievementsCount &&
+        lhs.parentAchievementsCount == rhs.parentAchievementsCount &&
+        lhs.redditURL == rhs.redditURL &&
+        lhs.redditName == rhs.redditName &&
+        lhs.redditDescription == rhs.redditDescription &&
+        lhs.redditLogo == rhs.redditLogo &&
+        lhs.redditCount == rhs.redditCount &&
+        lhs.twitchCount == rhs.twitchCount &&
+        lhs.youtubeCount == rhs.youtubeCount &&
+        lhs.reviewsTextCount == rhs.reviewsTextCount &&
+        lhs.ratingsCount == rhs.ratingsCount &&
+        lhs.suggestionsCount == rhs.suggestionsCount &&
+        lhs.alternativeNames == rhs.alternativeNames &&
+        lhs.metacriticURL == rhs.metacriticURL &&
+        lhs.parentsCount == rhs.parentsCount &&
+        lhs.additionsCount == rhs.additionsCount &&
+        lhs.gameSeriesCount == rhs.gameSeriesCount
+    }
     
     enum CodingKeys: String, CodingKey {
         case id, slug, name
