@@ -15,6 +15,7 @@
 		4498000B2A1CBA8B00D36D54 /* GameDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498000A2A1CBA8B00D36D54 /* GameDetailService.swift */; };
 		4498000D2A1CBAF100D36D54 /* GameDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498000C2A1CBAF100D36D54 /* GameDetailRepository.swift */; };
 		4498000F2A1CBB4200D36D54 /* GameDetailRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498000E2A1CBB4200D36D54 /* GameDetailRepositoryImpl.swift */; };
+		4498001D2A1CCAF600D36D54 /* GameFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */; };
 		4498FFF32A1C808300D36D54 /* GameExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */; };
 		4498FFF52A1C831B00D36D54 /* GameDetailExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */; };
 		4498FFF72A1C8A0800D36D54 /* GetFavoriteGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */; };
@@ -74,6 +75,16 @@
 		44A8BECC2A1C76D300BE536D /* GameDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BECB2A1C76D300BE536D /* GameDao.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4498001E2A1CCAF600D36D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44A8BE2F2A1B66E200BE536D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44A8BE362A1B66E200BE536D;
+			remoteInfo = GameFinder;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		449800002A1CADF200D36D54 /* FavoriteViewIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewIntent.swift; sourceTree = "<group>"; };
 		449800022A1CAE1600D36D54 /* FavoriteViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewResult.swift; sourceTree = "<group>"; };
@@ -83,6 +94,8 @@
 		4498000A2A1CBA8B00D36D54 /* GameDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailService.swift; sourceTree = "<group>"; };
 		4498000C2A1CBAF100D36D54 /* GameDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRepository.swift; sourceTree = "<group>"; };
 		4498000E2A1CBB4200D36D54 /* GameDetailRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRepositoryImpl.swift; sourceTree = "<group>"; };
+		4498001A2A1CCAF600D36D54 /* GameFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinderTests.swift; sourceTree = "<group>"; };
 		4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteGames.swift; sourceTree = "<group>"; };
@@ -144,6 +157,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		449800172A1CCAF600D36D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44A8BE342A1B66E200BE536D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4498001B2A1CCAF600D36D54 /* GameFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */,
+			);
+			path = GameFinderTests;
+			sourceTree = "<group>";
+		};
 		4498FFF12A1C806E00D36D54 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				44A8BE392A1B66E200BE536D /* GameFinder */,
+				4498001B2A1CCAF600D36D54 /* GameFinderTests */,
 				44A8BE382A1B66E200BE536D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				44A8BE372A1B66E200BE536D /* GameFinder.app */,
+				4498001A2A1CCAF600D36D54 /* GameFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,6 +507,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		449800192A1CCAF600D36D54 /* GameFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449800202A1CCAF600D36D54 /* Build configuration list for PBXNativeTarget "GameFinderTests" */;
+			buildPhases = (
+				449800162A1CCAF600D36D54 /* Sources */,
+				449800172A1CCAF600D36D54 /* Frameworks */,
+				449800182A1CCAF600D36D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4498001F2A1CCAF600D36D54 /* PBXTargetDependency */,
+			);
+			name = GameFinderTests;
+			productName = GameFinderTests;
+			productReference = 4498001A2A1CCAF600D36D54 /* GameFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		44A8BE362A1B66E200BE536D /* GameFinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A8BE4A2A1B66E400BE536D /* Build configuration list for PBXNativeTarget "GameFinder" */;
@@ -504,6 +552,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					449800192A1CCAF600D36D54 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 44A8BE362A1B66E200BE536D;
+					};
 					44A8BE362A1B66E200BE536D = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -523,11 +575,19 @@
 			projectRoot = "";
 			targets = (
 				44A8BE362A1B66E200BE536D /* GameFinder */,
+				449800192A1CCAF600D36D54 /* GameFinderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		449800182A1CCAF600D36D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44A8BE352A1B66E200BE536D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,6 +600,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		449800162A1CCAF600D36D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4498001D2A1CCAF600D36D54 /* GameFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44A8BE332A1B66E200BE536D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,7 +680,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4498001F2A1CCAF600D36D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44A8BE362A1B66E200BE536D /* GameFinder */;
+			targetProxy = 4498001E2A1CCAF600D36D54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		449800212A1CCAF600D36D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GSJL8ACDV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pras.GameFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GameFinder";
+			};
+			name = Debug;
+		};
+		449800222A1CCAF600D36D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GSJL8ACDV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pras.GameFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GameFinder";
+			};
+			name = Release;
+		};
 		44A8BE482A1B66E400BE536D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -788,6 +900,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		449800202A1CCAF600D36D54 /* Build configuration list for PBXNativeTarget "GameFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449800212A1CCAF600D36D54 /* Debug */,
+				449800222A1CCAF600D36D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		44A8BE322A1B66E200BE536D /* Build configuration list for PBXProject "GameFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
