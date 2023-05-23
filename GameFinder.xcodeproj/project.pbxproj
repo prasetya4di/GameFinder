@@ -49,6 +49,7 @@
 		44A8BEAD2A1BCFA000BE536D /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEAC2A1BCFA000BE536D /* EmptyView.swift */; };
 		44A8BEB02A1C5C1900BE536D /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEAF2A1C5C1900BE536D /* GameDetailView.swift */; };
 		44A8BEB32A1C5C6300BE536D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB22A1C5C6300BE536D /* FavoriteButton.swift */; };
+		44A8BEB62A1C5DD100BE536D /* GameDetailIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		44A8BEAC2A1BCFA000BE536D /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		44A8BEAF2A1C5C1900BE536D /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		44A8BEB22A1C5C6300BE536D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +345,7 @@
 		44A8BEAE2A1C58AB00BE536D /* GameDetail */ = {
 			isa = PBXGroup;
 			children = (
+				44A8BEB42A1C5DBC00BE536D /* ViewModel */,
 				44A8BEB12A1C5C4F00BE536D /* Components */,
 				44A8BEAF2A1C5C1900BE536D /* GameDetailView.swift */,
 			);
@@ -355,6 +358,14 @@
 				44A8BEB22A1C5C6300BE536D /* FavoriteButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		44A8BEB42A1C5DBC00BE536D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44A8BEB52A1C5DD100BE536D /* GameDetailIntent.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +476,7 @@
 				44A8BE772A1BA09C00BE536D /* SearchGames.swift in Sources */,
 				44A8BE3B2A1B66E200BE536D /* GameFinderApp.swift in Sources */,
 				44A8BE722A1B9A8600BE536D /* GameRepositoryImpl.swift in Sources */,
+				44A8BEB62A1C5DD100BE536D /* GameDetailIntent.swift in Sources */,
 				44A8BEA92A1BBDCE00BE536D /* PublisherExtension.swift in Sources */,
 				44A8BE912A1BB5F500BE536D /* ListGameView.swift in Sources */,
 			);
