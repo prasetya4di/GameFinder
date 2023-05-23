@@ -106,8 +106,7 @@ class GameRepositoryImpl: GameRepository {
     }
     
     func addFavoriteGame(_ game: Game) {
-        let gameTable = GameTable.from(game: game)
-        gameDao.addFavoriteGame(gameTable)
+        gameDao.addFavoriteGame(game)
     }
     
     func removeFavorite(_ id: Int) throws {

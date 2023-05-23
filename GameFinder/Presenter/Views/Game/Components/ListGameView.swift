@@ -16,7 +16,7 @@ struct ListGameView: View {
             ForEach(games, id: \.id) { game in
                 NavigationLink {
                     GameDetailView(
-                        id: game.id
+                        game: game
                     )
                 } label: {
                     GameItemView(game: game)

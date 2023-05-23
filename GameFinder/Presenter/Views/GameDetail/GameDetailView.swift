@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameDetailView: View {
     @EnvironmentObject var viewModel: GameDetailViewModel
-    let id: Int
+    let game: Game
     
     var body: some View {
         VStack {
@@ -27,11 +27,17 @@ struct GameDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                FavoriteButton(isFavorite: false) { }
+                FavoriteButton(isFavorite: viewModel.viewState.isFavorite) {
+                    if viewModel.viewState.isFavorite {
+                        viewModel.dispatch(.removeFromFavorite(game.id))
+                    } else {
+                        viewModel.dispatch(.addToFavorite(game))
+                    }
+                }
             }
         }
         .onAppear {
-            viewModel.dispatch(.getDetail(id))
+            viewModel.dispatch(.getDetail(game.id))
         }
     }
 }

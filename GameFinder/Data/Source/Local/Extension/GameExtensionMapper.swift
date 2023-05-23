@@ -25,18 +25,21 @@ extension GameTable {
         return gameTable
     }
     
-    static func from(game: Game) -> GameTable {
-        let gameTable = GameTable()
+    static func from(
+        game: Game,
+        withContext context: NSManagedObjectContext
+    ) -> GameTable {
+        let gameTable = GameTable(context: context)
         
-        gameTable.id = Int32(game.id)
-        gameTable.name = game.name
-        gameTable.backgroundImage = game.backgroundImage
-        gameTable.slug = game.slug
-        gameTable.tba = game.tba
-        gameTable.rating = game.rating
-        gameTable.ratingTop = Int32(game.ratingTop)
-        gameTable.ratingsCount = Int32(game.ratingsCount)
-        gameTable.released = game.released
+        gameTable.setValue(Int32(game.id), forKey: "id")
+        gameTable.setValue(game.name, forKey: "name")
+        gameTable.setValue(game.backgroundImage, forKey: "backgroundImage")
+        gameTable.setValue(game.slug, forKey: "slug")
+        gameTable.setValue(game.tba, forKey: "tba")
+        gameTable.setValue(game.rating, forKey: "rating")
+        gameTable.setValue(Int32(game.ratingTop), forKey: "ratingTop")
+        gameTable.setValue(Int32(game.ratingsCount), forKey: "ratingsCount")
+        gameTable.setValue(game.released, forKey: "released")
         
         return gameTable
     }

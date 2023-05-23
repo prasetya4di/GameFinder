@@ -9,7 +9,7 @@ import CoreData
 import Foundation
 
 protocol GameDao {
-    func addFavoriteGame(_ game: GameTable)
+    func addFavoriteGame(_ game: Game)
     
     func getFavoriteGame() throws -> [GameTable]
     
@@ -27,8 +27,8 @@ class GameDaoImpl: GameDao {
         self.persistence = persistence
     }
     
-    func addFavoriteGame(_ game: GameTable) {
-        _ = game.copy(withContext: persistence.managedContext)
+    func addFavoriteGame(_ game: Game) {
+        _ = GameTable.from(game: game, withContext: persistence.managedContext)
         persistence.saveContext()
     }
     
@@ -42,7 +42,7 @@ class GameDaoImpl: GameDao {
     
     func isFavorite(_ id: Int) throws -> Bool {
         let fetchRequest: NSFetchRequest<GameTable> = GameTable.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
         
         let gameTable = try persistence
             .managedContext
@@ -54,7 +54,7 @@ class GameDaoImpl: GameDao {
     
     func removeFavorite(_ id: Int) throws {
         let fetchRequest: NSFetchRequest<GameTable> = GameTable.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
         
         let gameTable = try persistence
             .managedContext

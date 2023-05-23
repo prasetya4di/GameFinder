@@ -71,14 +71,46 @@ class GameDetailViewModel: ObservableObject {
                 return createPublisher { [unowned self] in
                     try await self.getDetail.call(id)
                 }
-                .map { detail in
-                    .getDetailResult(.success(detail))
+                .flatMap { detail in
+                    return createPublisher { [unowned self] in
+                        try self.checkFavorite.call(id)
+                    }
+                    .map { isFavorite in
+                    	.getDetailResult(.success(detail, isFavorite))
+                    }
+                    .eraseToAnyPublisher()
                 }
                 .catch { error in
                     Just(.getDetailResult(.error(error)))
                         .eraseToAnyPublisher()
                 }
                 .prepend(.getDetailResult(.loading))
+                .eraseToAnyPublisher()
+            case .addToFavorite(let game):
+                return createPublisher { [unowned self] in
+                	self.addFavorite.call(game)
+                }
+                .map { detail in
+                    .addToFavoriteResult(.success)
+                }
+                .catch { error in
+                    Just(.addToFavoriteResult(.error(error)))
+                        .eraseToAnyPublisher()
+                }
+                .prepend(.addToFavoriteResult(.loading))
+                .eraseToAnyPublisher()
+            case .removeFromFavorite(let id):
+                return createPublisher { [unowned self] in
+                    try self.removeFavorite.call(id)
+                }
+                .map { detail in
+                    .removeFromFavoriteResult(.success)
+                }
+                .catch { error in
+                    Just(.removeFromFavoriteResult(.error(error)))
+                        .eraseToAnyPublisher()
+                }
+                .prepend(.removeFromFavoriteResult(.loading))
                 .eraseToAnyPublisher()
         }
     }
@@ -94,11 +126,28 @@ class GameDetailViewModel: ObservableObject {
                 switch status {
                     case .loading:
                         state.isLoading = true
-                    case .success(let detail):
+                    case .success(let detail, let isFavorited):
                         state.isLoading = false
                         state.detail = detail
+                        state.isFavorite = isFavorited
                     case .error(let error):
                         state.isLoading = false
+                        state.error = error
+                }
+            case .addToFavoriteResult(let status):
+                switch status {
+                    case .loading: break
+                    case .success:
+                        state.isFavorite = true
+                    case .error(let error):
+                        state.error = error
+                }
+            case .removeFromFavoriteResult(let status):
+                switch status {
+                    case .loading: break
+                    case .success:
+                        state.isFavorite = false
+                    case .error(let error):
                         state.error = error
                 }
         }

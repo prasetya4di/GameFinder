@@ -8,6 +8,13 @@
 import Combine
 import Foundation
 
+func createPublisher<T>(execute: @escaping () -> T) -> AnyPublisher<T, Never> {
+    Deferred {
+        Just(execute())
+    }
+    .eraseToAnyPublisher()
+}
+
 func createPublisher<T>(execute: @escaping () async throws -> T) -> AnyPublisher<T, Error> {
     Deferred {
         Future { promise in

@@ -9,6 +9,7 @@ import Foundation
 
 struct GameDetailViewState: Equatable {
     var isLoading = false
+    var isFavorite = false
     var detail: GameDetail? = nil
     var error: Error? = nil
     
@@ -18,6 +19,7 @@ struct GameDetailViewState: Equatable {
     
     static func == (lhs: GameDetailViewState, rhs: GameDetailViewState) -> Bool {
         return lhs.isLoading == rhs.isLoading
+        && lhs.isFavorite == rhs.isFavorite
         && lhs.detail?.id == rhs.detail?.id
         && lhs.error?.localizedDescription == rhs.error?.localizedDescription
     }
