@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449800012A1CADF200D36D54 /* FavoriteViewIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800002A1CADF200D36D54 /* FavoriteViewIntent.swift */; };
 		4498FFF32A1C808300D36D54 /* GameExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */; };
 		4498FFF52A1C831B00D36D54 /* GameDetailExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */; };
 		4498FFF72A1C8A0800D36D54 /* GetFavoriteGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		449800002A1CADF200D36D54 /* FavoriteViewIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewIntent.swift; sourceTree = "<group>"; };
 		4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteGames.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 				44A8BEA12A1BBAB800BE536D /* EndOfPageView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4498FFFF2A1CADE300D36D54 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				449800002A1CADF200D36D54 /* FavoriteViewIntent.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		44A8BE2E2A1B66E200BE536D = {
@@ -345,6 +355,7 @@
 		44A8BE832A1BAA2700BE536D /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				4498FFFF2A1CADE300D36D54 /* ViewModel */,
 				44A8BE842A1BAA3200BE536D /* FavoriteView.swift */,
 			);
 			path = Favorite;
@@ -528,6 +539,7 @@
 				44A8BE982A1BB95E00BE536D /* GameViewIntent.swift in Sources */,
 				44A8BE652A1B953500BE536D /* GameService.swift in Sources */,
 				44A8BE5C2A1B90A500BE536D /* GameDetailRequest.swift in Sources */,
+				449800012A1CADF200D36D54 /* FavoriteViewIntent.swift in Sources */,
 				44A8BE752A1B9EFD00BE536D /* GetGames.swift in Sources */,
 				44A8BEA62A1BBCBD00BE536D /* GameViewModel.swift in Sources */,
 				44A8BE8F2A1BB4BA00BE536D /* GameReleaseDate.swift in Sources */,
