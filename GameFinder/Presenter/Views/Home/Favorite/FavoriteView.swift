@@ -24,9 +24,7 @@ struct FavoriteView: View {
         }
         .padding()
         .onAppear {
-            if viewModel.viewState.games.isEmpty {
-                viewModel.dispatch(.getFavoriteGames)
-            }
+            viewModel.dispatch(.getFavoriteGames)
         }
     }
 }

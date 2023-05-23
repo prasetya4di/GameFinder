@@ -40,9 +40,7 @@ class GameRepositoryImpl: GameRepository {
     }
     
     func getFavoriteGames() throws -> [Game] {
-        return try gameDao
-            .getFavoriteGame()
-            .map { $0.toGame() }
+        return try gameDao.getFavoriteGame()
     }
     
     func addFavoriteGame(_ game: Game) {

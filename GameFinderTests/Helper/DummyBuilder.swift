@@ -22,7 +22,7 @@ func createGameResponse() -> GameResponse {
     )
 }
 
-func createListGame() -> [GameResponse] {
+func createListGameResponse() -> [GameResponse] {
     return [
     	createGameResponse(),
         createGameResponse(),
@@ -36,7 +36,7 @@ func createGamesResponse() -> GamesResponse {
         count: randomInt,
         next: randomString(length: 5),
         previous: randomString(length: 5),
-        results: createListGame()
+        results: createListGameResponse()
     )
 }
 
@@ -88,6 +88,29 @@ func createGameDetailResponse() -> GameDetailResponse {
             name: randomString(length: 5)
         ),
         platforms: [])
+}
+
+func createGame() -> Game {
+    return Game(
+        id: randomInt,
+        slug: randomString(length: 5),
+        name: randomString(length: 5),
+        released: .now,
+        tba: randomBool,
+        backgroundImage: randomString(length: 5),
+        rating: randomDouble(from: 0, to: 5),
+        ratingTop: randomInt,
+        ratingsCount: randomInt
+    )
+}
+
+func createListGame() -> [Game] {
+    return [
+    	createGame(),
+        createGame(),
+        createGame(),
+        createGame()
+    ]
 }
 
 var randomInt: Int {

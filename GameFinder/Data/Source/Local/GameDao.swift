@@ -11,7 +11,7 @@ import Foundation
 protocol GameDao {
     func addFavoriteGame(_ game: Game)
     
-    func getFavoriteGame() throws -> [GameTable]
+    func getFavoriteGame() throws -> [Game]
     
     func isFavorite(_ id: Int) throws -> Bool
     
@@ -31,12 +31,14 @@ class GameDaoImpl: GameDao {
         persistence.saveContext()
     }
     
-    func getFavoriteGame() throws -> [GameTable] {
+    func getFavoriteGame() throws -> [Game] {
         let fetchRequest: NSFetchRequest<GameTable> = GameTable.fetchRequest()
         
         let gameTableEntities = try persistence.managedContext.fetch(fetchRequest)
         
-        return gameTableEntities
+        return gameTableEntities.map { gameTable in
+            gameTable.toGame()
+        }
     }
     
     func isFavorite(_ id: Int) throws -> Bool {
