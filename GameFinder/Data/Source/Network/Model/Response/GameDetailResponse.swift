@@ -26,7 +26,8 @@ struct GameDetailResponse: Codable {
     let addedByStatus: AddedByStatus
     let playtime, screenshotsCount, moviesCount, creatorsCount: Int
     let achievementsCount: Int
-    let parentAchievementsCount, redditURL, redditName, redditDescription: String
+    let parentAchievementsCount: Int
+    let redditURL, redditName, redditDescription: String
     let redditLogo: String
     let redditCount: Int
     let twitchCount, youtubeCount, reviewsTextCount: String

@@ -15,7 +15,9 @@ struct ListGameView: View {
         VStack {
             ForEach(games, id: \.id) { game in
                 NavigationLink {
-                    GameDetailView()
+                    GameDetailView(
+                        id: game.id
+                    )
                 } label: {
                     GameItemView(game: game)
                         .onAppear {
