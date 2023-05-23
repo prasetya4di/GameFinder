@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4498FFF32A1C808300D36D54 /* GameExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */; };
 		4498FFF52A1C831B00D36D54 /* GameDetailExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */; };
+		4498FFF72A1C8A0800D36D54 /* GetFavoriteGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */; };
 		44A8BE3B2A1B66E200BE536D /* GameFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE3A2A1B66E200BE536D /* GameFinderApp.swift */; };
 		44A8BE3D2A1B66E200BE536D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A8BE3C2A1B66E200BE536D /* ContentView.swift */; };
 		44A8BE3F2A1B66E400BE536D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A8BE3E2A1B66E400BE536D /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailExtensionMapper.swift; sourceTree = "<group>"; };
+		4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteGames.swift; sourceTree = "<group>"; };
 		44A8BE372A1B66E200BE536D /* GameFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A8BE3A2A1B66E200BE536D /* GameFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinderApp.swift; sourceTree = "<group>"; };
 		44A8BE3C2A1B66E200BE536D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				44A8BE742A1B9EFD00BE536D /* GetGames.swift */,
 				44A8BE762A1BA09C00BE536D /* SearchGames.swift */,
 				44A8BE782A1BA11000BE536D /* GetGameDetail.swift */,
+				4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				44A8BEA22A1BBAB800BE536D /* EndOfPageView.swift in Sources */,
 				44A8BE7E2A1BA1F400BE536D /* HomeView.swift in Sources */,
 				44A8BEB02A1C5C1900BE536D /* GameDetailView.swift in Sources */,
+				4498FFF72A1C8A0800D36D54 /* GetFavoriteGames.swift in Sources */,
 				44A8BE3D2A1B66E200BE536D /* ContentView.swift in Sources */,
 				44A8BE882A1BAD7000BE536D /* GameItemView.swift in Sources */,
 				44A8BE852A1BAA3200BE536D /* FavoriteView.swift in Sources */,
