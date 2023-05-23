@@ -24,11 +24,7 @@ class GameDetailRepositoryImpl: GameDetailRepository {
     }
     
     func getDetail(_ id: Int) throws -> GameDetail? {
-        guard let result = try gameDetailDao.getGameDetail(id) else {
-            return nil
-        }
-        
-        return result.toGameDetail()
+        return try gameDetailDao.getGameDetail(id)
     }
     
     func fetchDetail(_ id: Int) async throws -> GameDetail {

@@ -11,7 +11,7 @@ import Foundation
 protocol GameDetailDao {
     func addGameDetail(_ gameDetail: GameDetail)
     
-    func getGameDetail(_ id: Int) throws -> GameDetailTable?
+    func getGameDetail(_ id: Int) throws -> GameDetail?
 }
 
 class GameDetailDaoImpl: GameDetailDao {
@@ -29,7 +29,7 @@ class GameDetailDaoImpl: GameDetailDao {
         persistence.saveContext()
     }
     
-    func getGameDetail(_ id: Int) throws -> GameDetailTable? {
+    func getGameDetail(_ id: Int) throws -> GameDetail? {
         let fetchRequest: NSFetchRequest<GameDetailTable> = GameDetailTable.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "id == %d", id)
         
@@ -38,6 +38,6 @@ class GameDetailDaoImpl: GameDetailDao {
             .fetch(fetchRequest)
             .first
         
-        return gameDetailTable
+        return gameDetailTable?.toGameDetail()
     }
 }

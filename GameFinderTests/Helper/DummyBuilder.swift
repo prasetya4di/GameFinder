@@ -90,6 +90,47 @@ func createGameDetailResponse() -> GameDetailResponse {
         platforms: [])
 }
 
+func createGameDetail() -> GameDetail {
+    return GameDetail(
+        id: randomInt,
+        slug: randomString(length: 5),
+        name: randomString(length: 5),
+        nameOriginal: randomString(length: 5),
+        description: randomString(length: 5),
+        metacritic: randomInt,
+        released: .now,
+        tba: randomBool,
+        updated: .now,
+        backgroundImage: randomString(length: 5),
+        backgroundImageAdditional: randomString(length: 5),
+        website: randomString(length: 5),
+        rating: randomDouble(from: 0, to: 5),
+        ratingTop: 5,
+        added: randomInt,
+        playtime: randomInt,
+        screenshotsCount: randomInt,
+        moviesCount: randomInt,
+        creatorsCount: randomInt,
+        achievementsCount: randomInt,
+        parentAchievementsCount: randomInt,
+        redditURL: randomString(length: 5),
+        redditName: randomString(length: 5),
+        redditDescription: randomString(length: 5),
+        redditLogo: randomString(length: 5),
+        redditCount: randomInt,
+        twitchCount: randomInt,
+        youtubeCount: randomInt,
+        reviewsTextCount: randomInt,
+        ratingsCount: randomInt,
+        suggestionsCount: randomInt,
+        alternativeNames: [],
+        metacriticURL: randomString(length: 5),
+        parentsCount: randomInt,
+        additionsCount: randomInt,
+        gameSeriesCount: randomInt,
+        platforms: [])
+}
+
 func createGame() -> Game {
     return Game(
         id: randomInt,
