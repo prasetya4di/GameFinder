@@ -20,7 +20,6 @@ protocol GameDao {
 
 class GameDaoImpl: GameDao {
     
-    
     private let persistence: PersistenceController
     
     init(_ persistence: PersistenceController) {
