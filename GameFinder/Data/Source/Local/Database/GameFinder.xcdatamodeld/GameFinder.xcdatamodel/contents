@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GameDetailTable" representedClassName="GameDetailTable" syncable="YES" codeGenerationType="class">
+        <attribute name="achievementsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="added" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="additionsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="alternativeNames" optional="YES" attributeType="String"/>
+        <attribute name="backgroundImage" optional="YES" attributeType="String"/>
+        <attribute name="backgroundImageAdditional" optional="YES" attributeType="String"/>
+        <attribute name="creatorsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="detailDescription" optional="YES" attributeType="String"/>
+        <attribute name="gameSeriesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="metacritic" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="metacriticUrl" optional="YES" attributeType="String"/>
+        <attribute name="moviesCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameOriginal" optional="YES" attributeType="String"/>
+        <attribute name="parentAchievementsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="parentsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="platforms" optional="YES" attributeType="String"/>
+        <attribute name="playtime" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ratingsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ratingTop" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="redditCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="redditDescription" optional="YES" attributeType="String"/>
+        <attribute name="redditLogo" optional="YES" attributeType="String"/>
+        <attribute name="redditName" optional="YES" attributeType="String"/>
+        <attribute name="redditUrl" optional="YES" attributeType="String"/>
+        <attribute name="released" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="reviewsTextCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="screenshotsCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="slug" optional="YES" attributeType="String"/>
+        <attribute name="suggestionsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tba" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="twitchCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <attribute name="youtubeCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="GameTable" representedClassName="GameTable" syncable="YES" codeGenerationType="class">
+        <attribute name="backgroundImage" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ratingsCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ratingTop" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="released" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="slug" optional="YES" attributeType="String"/>
+        <attribute name="tba" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+</model>

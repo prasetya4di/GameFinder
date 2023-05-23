@@ -150,8 +150,6 @@
 				44A8BE3A2A1B66E200BE536D /* GameFinderApp.swift */,
 				44A8BE3C2A1B66E200BE536D /* ContentView.swift */,
 				44A8BE3E2A1B66E400BE536D /* Assets.xcassets */,
-				44A8BE432A1B66E400BE536D /* Persistence.swift */,
-				44A8BE452A1B66E400BE536D /* GameFinder.xcdatamodeld */,
 				44A8BE402A1B66E400BE536D /* Preview Content */,
 			);
 			path = GameFinder;
@@ -177,6 +175,7 @@
 		44A8BE4E2A1B8C2100BE536D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				44A8BEC92A1C768700BE536D /* Local */,
 				44A8BE4F2A1B8C2A00BE536D /* Network */,
 			);
 			path = Source;
@@ -387,6 +386,23 @@
 				44A8BEBB2A1C5F1B00BE536D /* GameDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44A8BEC92A1C768700BE536D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				44A8BE432A1B66E400BE536D /* Persistence.swift */,
+				44A8BECA2A1C768E00BE536D /* Database */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		44A8BECA2A1C768E00BE536D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				44A8BE452A1B66E400BE536D /* GameFinder.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
