@@ -12,7 +12,7 @@ struct ListGameView: View {
     let loadMore: () -> Void
     
     var body: some View {
-        VStack {
+        LazyVStack {
             ForEach(games, id: \.id) { game in
                 NavigationLink {
                     GameDetailView(
