@@ -11,6 +11,10 @@ struct PersistenceController {
     static let shared = PersistenceController()
 
     let container: NSPersistentContainer
+    
+    var managedContext: NSManagedObjectContext {
+        container.viewContext
+    }
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "GameFinder")
@@ -34,5 +38,15 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    
+    func saveContext() {
+        if managedContext.hasChanges {
+            do {
+                try managedContext.save()
+            } catch let error {
+                fatalError("Failed to save managed object context : \(error)")
+            }
+        }
     }
 }
