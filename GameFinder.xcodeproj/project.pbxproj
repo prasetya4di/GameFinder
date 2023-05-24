@@ -215,6 +215,7 @@
 		4498001B2A1CCAF600D36D54 /* GameFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				449800442A1D138500D36D54 /* Domain */,
 				4498002C2A1CD5C200D36D54 /* Helper */,
 				449800242A1CCB1100D36D54 /* Data */,
 				4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */,
@@ -225,6 +226,7 @@
 		449800242A1CCB1100D36D54 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				449800352A1D032D00D36D54 /* Repository */,
 				449800252A1CCB1600D36D54 /* Source */,
 			);
 			path = Data;
@@ -233,8 +235,6 @@
 		449800252A1CCB1600D36D54 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				449800442A1D138500D36D54 /* Domain */,
-				449800352A1D032D00D36D54 /* Repository */,
 				449800262A1CCB2200D36D54 /* Network */,
 			);
 			path = Source;
