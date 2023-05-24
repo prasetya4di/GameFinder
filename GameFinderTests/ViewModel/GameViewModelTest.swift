@@ -16,7 +16,7 @@ final class GameViewModelTest: XCTestCase {
     private var mockSearchGames: MockSearchGames!
     private var gameViewModel: GameViewModel!
     
-    var cancellables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
 
     override func setUp() {
         mockGetGames = MockGetGames()
