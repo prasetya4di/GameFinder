@@ -112,6 +112,9 @@ class GameDetailViewModel: ObservableObject {
                 }
                 .prepend(.removeFromFavoriteResult(.loading))
                 .eraseToAnyPublisher()
+            case .hideToast:
+                return Just(.hideToastResult)
+                    .eraseToAnyPublisher()
         }
     }
     
@@ -138,6 +141,7 @@ class GameDetailViewModel: ObservableObject {
                 switch status {
                     case .loading: break
                     case .success:
+                        state.showToast = true
                         state.isFavorite = true
                     case .error(let error):
                         state.error = error
@@ -146,10 +150,13 @@ class GameDetailViewModel: ObservableObject {
                 switch status {
                     case .loading: break
                     case .success:
+                        state.showToast = true
                         state.isFavorite = false
                     case .error(let error):
                         state.error = error
                 }
+            case .hideToastResult:
+                state.showToast = false
         }
         
         return state

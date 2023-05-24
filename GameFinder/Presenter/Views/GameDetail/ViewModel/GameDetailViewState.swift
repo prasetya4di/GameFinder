@@ -10,6 +10,7 @@ import Foundation
 struct GameDetailViewState: Equatable {
     var isLoading = false
     var isFavorite = false
+    var showToast = false
     var detail: GameDetail? = nil
     var error: Error? = nil
     

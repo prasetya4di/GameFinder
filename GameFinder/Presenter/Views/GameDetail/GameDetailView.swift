@@ -20,7 +20,7 @@ struct GameDetailView: View {
             } else if let detail = viewModel.viewState.detail {
                 DetailView(detail: detail)
             } else {
-                EmptyView()
+                EmptyGameView()
             }
         }
         .navigationTitle(viewModel.viewState.detail?.name ?? "")
@@ -36,8 +36,28 @@ struct GameDetailView: View {
                 }
             }
         }
+        .toast(isPresented: showToast) {
+            Text(
+                viewModel.viewState.isFavorite
+                ? "Added to Favorite"
+                : "Removed from Favorite"
+            )
+        }
         .onAppear {
             viewModel.dispatch(.getDetail(game.id))
         }
+    }
+}
+
+extension GameDetailView {
+    private var showToast: Binding<Bool> {
+        Binding<Bool> (
+            get: {
+                return viewModel.viewState.showToast
+            },
+            set: { _ in
+                viewModel.dispatch(.hideToast)
+            }
+        )
     }
 }

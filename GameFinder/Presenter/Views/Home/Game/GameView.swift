@@ -29,7 +29,7 @@ struct GameView: View {
                 if viewModel.viewState.isSearching {
                     LoadingView()
                 } else if viewModel.viewState.games.isEmpty {
-                    EmptyView()
+                    EmptyGameView()
                 } else {
                     ScrollView(showsIndicators: false) {
                         ListGameView(games: viewModel.viewState.games) {

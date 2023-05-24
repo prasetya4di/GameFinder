@@ -11,6 +11,7 @@ enum GameDetailResult {
     case getDetailResult(_ status: GetDetailStatus)
     case addToFavoriteResult(_ status: AddToFavoriteStatus)
     case removeFromFavoriteResult(_ status: RemoveFromFavoriteStatus)
+    case hideToastResult
     
     enum GetDetailStatus {
         case loading

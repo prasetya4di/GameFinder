@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EmptyView: View {
+struct EmptyGameView: View {
     var body: some View {
         VStack(spacing: 8) {
             Spacer()
@@ -26,6 +26,6 @@ struct EmptyView: View {
 
 struct EmptyView_Previews: PreviewProvider {
     static var previews: some View {
-        EmptyView()
+        EmptyGameView()
     }
 }
