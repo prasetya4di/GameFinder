@@ -9,6 +9,8 @@ import Foundation
 @testable import GameFinder
 
 class MockGameDetailRepository: GameDetailRepository {
+    var isFetched = false
+    var isGet = false
     var expectedGameDetail: GameDetail?
     var error: Error?
     
@@ -16,7 +18,7 @@ class MockGameDetailRepository: GameDetailRepository {
         if let error {
             throw error
         }
-        
+        isFetched = true
         return expectedGameDetail!
     }
     
@@ -24,7 +26,7 @@ class MockGameDetailRepository: GameDetailRepository {
         if let error {
             throw error
         }
-        
+        isGet = true
         return expectedGameDetail?.id == id
         	? expectedGameDetail
         	: nil
