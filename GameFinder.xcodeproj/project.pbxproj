@@ -15,7 +15,6 @@
 		4498000B2A1CBA8B00D36D54 /* GameDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498000A2A1CBA8B00D36D54 /* GameDetailService.swift */; };
 		4498000D2A1CBAF100D36D54 /* GameDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498000C2A1CBAF100D36D54 /* GameDetailRepository.swift */; };
 		4498000F2A1CBB4200D36D54 /* GameDetailRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498000E2A1CBB4200D36D54 /* GameDetailRepositoryImpl.swift */; };
-		4498001D2A1CCAF600D36D54 /* GameFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */; };
 		4498002E2A1CD5D100D36D54 /* DummyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498002D2A1CD5D100D36D54 /* DummyBuilder.swift */; };
 		449800302A1CFAFE00D36D54 /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498002F2A1CFAFE00D36D54 /* MockApiClient.swift */; };
 		449800322A1CFBCE00D36D54 /* GameServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800312A1CFBCE00D36D54 /* GameServiceTest.swift */; };
@@ -35,6 +34,13 @@
 		449800532A1DBD6500D36D54 /* AddFavoriteGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800522A1DBD6500D36D54 /* AddFavoriteGameTest.swift */; };
 		449800552A1DBE4300D36D54 /* RemoveFavoriteGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800542A1DBE4300D36D54 /* RemoveFavoriteGameTest.swift */; };
 		449800572A1DBFCE00D36D54 /* CheckFavoriteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800562A1DBFCE00D36D54 /* CheckFavoriteTest.swift */; };
+		4498005B2A1DC1AF00D36D54 /* MockGetGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498005A2A1DC1AF00D36D54 /* MockGetGames.swift */; };
+		4498005D2A1DC37600D36D54 /* MockSearchGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498005C2A1DC37600D36D54 /* MockSearchGames.swift */; };
+		4498005F2A1DC3BC00D36D54 /* MocKGetGameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498005E2A1DC3BC00D36D54 /* MocKGetGameDetail.swift */; };
+		449800612A1DC41D00D36D54 /* MockGetFavoriteGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800602A1DC41D00D36D54 /* MockGetFavoriteGames.swift */; };
+		449800632A1DC47F00D36D54 /* MockAddFavoriteGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800622A1DC47F00D36D54 /* MockAddFavoriteGame.swift */; };
+		449800652A1DC4F600D36D54 /* MockRemoveFavoriteGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800642A1DC4F600D36D54 /* MockRemoveFavoriteGame.swift */; };
+		449800672A1DC56900D36D54 /* MockCheckFavoriteGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800662A1DC56900D36D54 /* MockCheckFavoriteGame.swift */; };
 		4498FFF32A1C808300D36D54 /* GameExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */; };
 		4498FFF52A1C831B00D36D54 /* GameDetailExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */; };
 		4498FFF72A1C8A0800D36D54 /* GetFavoriteGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */; };
@@ -114,7 +120,6 @@
 		4498000C2A1CBAF100D36D54 /* GameDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRepository.swift; sourceTree = "<group>"; };
 		4498000E2A1CBB4200D36D54 /* GameDetailRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRepositoryImpl.swift; sourceTree = "<group>"; };
 		4498001A2A1CCAF600D36D54 /* GameFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinderTests.swift; sourceTree = "<group>"; };
 		4498002D2A1CD5D100D36D54 /* DummyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBuilder.swift; sourceTree = "<group>"; };
 		4498002F2A1CFAFE00D36D54 /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
 		449800312A1CFBCE00D36D54 /* GameServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServiceTest.swift; sourceTree = "<group>"; };
@@ -134,6 +139,13 @@
 		449800522A1DBD6500D36D54 /* AddFavoriteGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoriteGameTest.swift; sourceTree = "<group>"; };
 		449800542A1DBE4300D36D54 /* RemoveFavoriteGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteGameTest.swift; sourceTree = "<group>"; };
 		449800562A1DBFCE00D36D54 /* CheckFavoriteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFavoriteTest.swift; sourceTree = "<group>"; };
+		4498005A2A1DC1AF00D36D54 /* MockGetGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetGames.swift; sourceTree = "<group>"; };
+		4498005C2A1DC37600D36D54 /* MockSearchGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchGames.swift; sourceTree = "<group>"; };
+		4498005E2A1DC3BC00D36D54 /* MocKGetGameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocKGetGameDetail.swift; sourceTree = "<group>"; };
+		449800602A1DC41D00D36D54 /* MockGetFavoriteGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetFavoriteGames.swift; sourceTree = "<group>"; };
+		449800622A1DC47F00D36D54 /* MockAddFavoriteGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddFavoriteGame.swift; sourceTree = "<group>"; };
+		449800642A1DC4F600D36D54 /* MockRemoveFavoriteGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoveFavoriteGame.swift; sourceTree = "<group>"; };
+		449800662A1DC56900D36D54 /* MockCheckFavoriteGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCheckFavoriteGame.swift; sourceTree = "<group>"; };
 		4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteGames.swift; sourceTree = "<group>"; };
@@ -215,10 +227,10 @@
 		4498001B2A1CCAF600D36D54 /* GameFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				449800582A1DC0CC00D36D54 /* ViewModel */,
 				449800442A1D138500D36D54 /* Domain */,
 				4498002C2A1CD5C200D36D54 /* Helper */,
 				449800242A1CCB1100D36D54 /* Data */,
-				4498001C2A1CCAF600D36D54 /* GameFinderTests.swift */,
 			);
 			path = GameFinderTests;
 			sourceTree = "<group>";
@@ -317,6 +329,28 @@
 				449800482A1D14DE00D36D54 /* MockGameDetailRepository.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		449800582A1DC0CC00D36D54 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				449800592A1DC0D200D36D54 /* Mocks */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		449800592A1DC0D200D36D54 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4498005A2A1DC1AF00D36D54 /* MockGetGames.swift */,
+				4498005C2A1DC37600D36D54 /* MockSearchGames.swift */,
+				4498005E2A1DC3BC00D36D54 /* MocKGetGameDetail.swift */,
+				449800602A1DC41D00D36D54 /* MockGetFavoriteGames.swift */,
+				449800622A1DC47F00D36D54 /* MockAddFavoriteGame.swift */,
+				449800642A1DC4F600D36D54 /* MockRemoveFavoriteGame.swift */,
+				449800662A1DC56900D36D54 /* MockCheckFavoriteGame.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		4498FFF12A1C806E00D36D54 /* Extension */ = {
@@ -744,20 +778,26 @@
 				4498004B2A1DB64400D36D54 /* GetGameTest.swift in Sources */,
 				4498003E2A1D0BF900D36D54 /* MockGameDetailService.swift in Sources */,
 				449800302A1CFAFE00D36D54 /* MockApiClient.swift in Sources */,
+				4498005F2A1DC3BC00D36D54 /* MocKGetGameDetail.swift in Sources */,
 				449800512A1DBC7C00D36D54 /* GetFavoriteGamesTest.swift in Sources */,
+				4498005B2A1DC1AF00D36D54 /* MockGetGames.swift in Sources */,
+				449800612A1DC41D00D36D54 /* MockGetFavoriteGames.swift in Sources */,
 				449800572A1DBFCE00D36D54 /* CheckFavoriteTest.swift in Sources */,
+				449800652A1DC4F600D36D54 /* MockRemoveFavoriteGame.swift in Sources */,
 				449800552A1DBE4300D36D54 /* RemoveFavoriteGameTest.swift in Sources */,
+				449800672A1DC56900D36D54 /* MockCheckFavoriteGame.swift in Sources */,
+				449800632A1DC47F00D36D54 /* MockAddFavoriteGame.swift in Sources */,
 				4498003A2A1D03AA00D36D54 /* MockGameDao.swift in Sources */,
 				449800382A1D034B00D36D54 /* MockGameService.swift in Sources */,
 				4498002E2A1CD5D100D36D54 /* DummyBuilder.swift in Sources */,
 				449800422A1D0DC900D36D54 /* GameDetailRepositoryTest.swift in Sources */,
 				449800402A1D0C5600D36D54 /* MockGameDetailDao.swift in Sources */,
 				449800472A1D141F00D36D54 /* MockGameRepository.swift in Sources */,
-				4498001D2A1CCAF600D36D54 /* GameFinderTests.swift in Sources */,
 				449800492A1D14DE00D36D54 /* MockGameDetailRepository.swift in Sources */,
 				4498003C2A1D05F100D36D54 /* GameRepositoryTest.swift in Sources */,
 				449800532A1DBD6500D36D54 /* AddFavoriteGameTest.swift in Sources */,
 				4498004D2A1DB7D100D36D54 /* SearchGamesTest.swift in Sources */,
+				4498005D2A1DC37600D36D54 /* MockSearchGames.swift in Sources */,
 				449800322A1CFBCE00D36D54 /* GameServiceTest.swift in Sources */,
 				449800342A1CFFF200D36D54 /* GameDetailServiceTest.swift in Sources */,
 				4498004F2A1DB9AD00D36D54 /* GetGameDetailTest.swift in Sources */,
