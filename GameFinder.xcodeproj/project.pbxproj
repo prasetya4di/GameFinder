@@ -28,6 +28,7 @@
 		449800422A1D0DC900D36D54 /* GameDetailRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800412A1D0DC900D36D54 /* GameDetailRepositoryTest.swift */; };
 		449800472A1D141F00D36D54 /* MockGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800462A1D141F00D36D54 /* MockGameRepository.swift */; };
 		449800492A1D14DE00D36D54 /* MockGameDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449800482A1D14DE00D36D54 /* MockGameDetailRepository.swift */; };
+		4498004B2A1DB64400D36D54 /* GetGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498004A2A1DB64400D36D54 /* GetGameTest.swift */; };
 		4498FFF32A1C808300D36D54 /* GameExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */; };
 		4498FFF52A1C831B00D36D54 /* GameDetailExtensionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */; };
 		4498FFF72A1C8A0800D36D54 /* GetFavoriteGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */; };
@@ -120,6 +121,7 @@
 		449800412A1D0DC900D36D54 /* GameDetailRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRepositoryTest.swift; sourceTree = "<group>"; };
 		449800462A1D141F00D36D54 /* MockGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameRepository.swift; sourceTree = "<group>"; };
 		449800482A1D14DE00D36D54 /* MockGameDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameDetailRepository.swift; sourceTree = "<group>"; };
+		4498004A2A1DB64400D36D54 /* GetGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGameTest.swift; sourceTree = "<group>"; };
 		4498FFF22A1C808300D36D54 /* GameExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF42A1C831B00D36D54 /* GameDetailExtensionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailExtensionMapper.swift; sourceTree = "<group>"; };
 		4498FFF62A1C8A0800D36D54 /* GetFavoriteGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteGames.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		449800432A1D137A00D36D54 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				4498004A2A1DB64400D36D54 /* GetGameTest.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4498004B2A1DB64400D36D54 /* GetGameTest.swift in Sources */,
 				4498003E2A1D0BF900D36D54 /* MockGameDetailService.swift in Sources */,
 				449800302A1CFAFE00D36D54 /* MockApiClient.swift in Sources */,
 				4498003A2A1D03AA00D36D54 /* MockGameDao.swift in Sources */,
