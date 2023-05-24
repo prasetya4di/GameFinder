@@ -13,7 +13,7 @@ final class GetGameTest: XCTestCase {
     private var mockGameRepository: MockGameRepository!
     private var getGames: GetGames!
     
-    override func setUpWithError() throws {
+    override func setUp() {
         mockGameRepository = MockGameRepository()
         getGames = GetGamesImpl(mockGameRepository)
     }
