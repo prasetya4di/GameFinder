@@ -71,6 +71,6 @@ final class FavoriteViewModelTest: XCTestCase {
         
         favoriteViewModel.dispatch(intent)
         
-        wait(for: [expectation], timeout: 1.0)
+        wait(for: [expectation], timeout: 1)
     }
 }

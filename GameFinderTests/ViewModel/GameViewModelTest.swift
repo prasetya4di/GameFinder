@@ -144,6 +144,6 @@ final class GameViewModelTest: XCTestCase {
         
         gameViewModel.dispatch(intent)
         
-        wait(for: [expectation], timeout: 1.0)
+        wait(for: [expectation], timeout: 1)
     }
 }
