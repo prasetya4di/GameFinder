@@ -3,7 +3,9 @@ An app to find a game and the information
 
 # Architecture
 Design Pattern : MVI
+
 Architecture : Clean Architecture
+
 ![GameFinderArchitecture drawio (1)](https://github.com/prasetya4di/GameFinder/assets/84487845/0d331218-6be0-493e-bb1b-3fc660cdbe08)
 
 # Screenshots
